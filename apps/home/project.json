@@ -75,6 +75,13 @@
         "jestConfig": "apps/home/jest.config.ts",
         "passWithNoTests": true
       }
+    },
+    "deploy": {
+      "executor": "nx:run-commands",
+      "outputs": [],
+      "options": {
+        "command": "aws s3 sync dist/apps/home s3://vendittelli.co.uk"
+      }
     }
   },
   "tags": []
