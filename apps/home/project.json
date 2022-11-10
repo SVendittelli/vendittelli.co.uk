@@ -21,7 +21,9 @@
           "apps/home/src/favicon.ico",
           "apps/home/src/assets",
           "apps/home/src/.well-known",
-          "apps/home/src/humans.txt"
+          "apps/home/src/humans.txt",
+          "apps/home/src/robots.txt",
+          "apps/home/src/sitemap.xml"
         ],
         "styles": ["apps/home/src/styles.scss"],
         "scripts": [],
