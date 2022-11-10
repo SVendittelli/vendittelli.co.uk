@@ -6,6 +6,7 @@
   "targets": {
     "build": {
       "executor": "@nrwl/webpack:webpack",
+      "dependsOn": ["prepare"],
       "outputs": ["{options.outputPath}"],
       "defaultConfiguration": "production",
       "options": {
@@ -19,7 +20,8 @@
         "assets": [
           "apps/home/src/favicon.ico",
           "apps/home/src/assets",
-          "apps/home/src/.well-known"
+          "apps/home/src/.well-known",
+          "apps/home/src/humans.txt"
         ],
         "styles": ["apps/home/src/styles.scss"],
         "scripts": [],
@@ -82,9 +84,14 @@
     },
     "deploy": {
       "executor": "nx:run-commands",
-      "outputs": [],
       "options": {
         "command": "aws s3 sync dist/apps/home s3://vendittelli.co.uk --delete"
+      }
+    },
+    "prepare": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "node apps/home/utils/prepare.js"
       }
     }
   },
