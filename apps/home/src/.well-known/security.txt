@@ -1,0 +1,5 @@
+Contact: https://github.com/SVendittelli/vendittelli.co.uk/security/advisories
+Expires: 2023-01-01T00:00:00.000Z
+Preferred-Languages: en
+Canonical: https://vendittelli.co.uk/.well-known/security.txt
+Policy: https://github.com/SVendittelli/vendittelli.co.uk/security/policy
