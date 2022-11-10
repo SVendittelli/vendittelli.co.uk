@@ -76,11 +76,8 @@ jobs:
       - name: Install dependencies
         run: yarn install --frozen-lockfile
 
-      - name: Download dist artifact
+      - name: Download all artifacts
         uses: actions/download-artifact@v3
-        with:
-          name: dist
-          path: dist
 
       - name: Configure AWS credentials for deployments
         uses: aws-actions/configure-aws-credentials@v1
