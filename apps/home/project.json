@@ -80,7 +80,7 @@
       "executor": "nx:run-commands",
       "outputs": [],
       "options": {
-        "command": "aws s3 sync dist/apps/home s3://vendittelli.co.uk"
+        "command": "aws s3 sync dist/apps/home s3://vendittelli.co.uk --delete"
       }
     }
   },
