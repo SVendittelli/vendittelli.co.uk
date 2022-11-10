@@ -2,14 +2,16 @@
 
 let { readFile, writeFile } = require('fs');
 
-const file = 'apps/home/src/humans.txt';
+const files = ['apps/home/src/humans.txt', 'apps/home/src/sitemap.xml'];
 
-readFile(file + '.tmpl', 'utf8', function (err, data) {
-  if (err) return console.error(err);
-
-  const result = data.replace(/%NOW%/g, new Date().toISOString());
-
-  writeFile(file, result, 'utf8', function (err) {
+files.forEach((file) => {
+  readFile(file + '.tmpl', 'utf8', function (err, data) {
     if (err) return console.error(err);
+
+    const result = data.replace(/%NOW%/g, new Date().toISOString());
+
+    writeFile(file, result, 'utf8', function (err) {
+      if (err) return console.error(err);
+    });
   });
 });
