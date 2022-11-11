@@ -6,12 +6,12 @@ describe('App', () => {
   it('should render successfully', () => {
     const { baseElement } = render(<App />);
 
-    expect(baseElement).toBeTruthy();
+    expect(baseElement).toBeDefined();
   });
 
-  it('should have a greeting as the title', () => {
+  it('should have a name in the title', () => {
     const { getByText } = render(<App />);
 
-    expect(getByText(/Welcome/gi)).toBeTruthy();
+    expect(getByText(/Sam Vendittelli/)).toMatchSnapshot();
   });
 });
