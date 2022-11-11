@@ -59,7 +59,7 @@ resource "cloudflare_record" "spf1" {
 # Variously configure:
 # - Redirect all requests with scheme “http” to “https”
 # - Change “http” to “https” for all resources or links that can be served with HTTPS
-# - Encrypts end-to-end: browser -> cloudflare -> S3
+# - Encrypts browser -> cloudflare but not to S3
 # - Enable the latest version of the TLS protocol
 # - Enable HSTS headers for root and subdomains
 resource "cloudflare_zone_settings_override" "security" {
@@ -68,7 +68,7 @@ resource "cloudflare_zone_settings_override" "security" {
   settings {
     always_use_https         = "on"
     automatic_https_rewrites = "on"
-    ssl                      = "strict"
+    ssl                      = "flexible"
     tls_1_3                  = "on"
     security_header {
       enabled            = true
