@@ -2,9 +2,10 @@
 
 let { readFile, writeFile } = require('fs');
 
-const files = ['apps/home/src/humans.txt', 'apps/home/src/sitemap.xml'];
+const files = ['apps/home/src/humans.txt', 'apps/home/src/sitemap.xml'].sort();
 
 files.forEach((file) => {
+  console.log(`Preparing ${file}`);
   readFile(file + '.tmpl', 'utf8', function (err, data) {
     if (err) return console.error(err);
 

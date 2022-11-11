@@ -54,6 +54,7 @@
     },
     "serve": {
       "executor": "@nrwl/webpack:dev-server",
+      "dependsOn": ["prepare"],
       "defaultConfiguration": "development",
       "options": {
         "buildTarget": "home:build",
