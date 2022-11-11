@@ -6,6 +6,7 @@
   "targets": {
     "e2e": {
       "executor": "@nrwl/cypress:cypress",
+      "dependsOn": ["^prepare"],
       "options": {
         "cypressConfig": "apps/home-e2e/cypress.config.ts",
         "devServerTarget": "home:serve:development",
