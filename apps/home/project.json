@@ -94,6 +94,10 @@
     },
     "prepare": {
       "executor": "nx:run-commands",
+      "outputs": [
+        "{workspaceRoot}/apps/home/src/humans.txt",
+        "{workspaceRoot}/apps/home/src/sitemap.xml"
+      ],
       "options": {
         "command": "node apps/home/utils/prepare.js"
       }
