@@ -5,6 +5,7 @@
 [![Deployment](https://img.shields.io/github/deployments/SVendittelli/vendittelli.co.uk/production?label=deploy)](https://github.com/SVendittelli/vendittelli.co.uk/deployments/activity_log?environment=production)
 [![Website Status](https://img.shields.io/website?url=https%3A%2F%2Fvendittelli.co.uk)](https://vendittelli.co.uk/)
 [![UptimeRobot](https://img.shields.io/uptimerobot/ratio/m793028518-cb286cb8b65c7c745debebe1)](https://stats.uptimerobot.com/80zk0uXpKG)
+[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 
 > See the live site at [vendittelli.co.uk](https://vendittelli.co.uk/)
 
