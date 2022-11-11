@@ -1,14 +1,7 @@
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-import styles from './app.module.scss';
-import NxWelcome from './nx-welcome';
+import { Header } from '@vendittelli/common-ui';
 
 export function App() {
-  return (
-    <>
-      <NxWelcome title="vendittelli.co.uk" />
-      <div />
-    </>
-  );
+  return <Header text="Sam Vendittelli | Full-stack Web Developer" />;
 }
 
 export default App;

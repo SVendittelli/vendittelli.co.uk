@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
-  "npmScope": "vendittelli.co.uk",
+  "npmScope": "vendittelli",
   "tasksRunnerOptions": {
     "default": {
       "runner": "@nrwl/nx-cloud",
