@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header should render successfully 1`] = `
+<body>
+  <div>
+    <header
+      class="container"
+    >
+      <h1>
+        Example
+      </h1>
+    </header>
+  </div>
+</body>
+`;
