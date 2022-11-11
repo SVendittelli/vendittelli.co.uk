@@ -78,3 +78,13 @@ resource "cloudflare_zone_settings_override" "security" {
     }
   }
 }
+
+# Enable security headers using Managed Meaders
+resource "cloudflare_managed_headers" "managed_headers" {
+  zone_id = local.zone_id
+
+  managed_response_headers {
+    id      = "add_security_headers"
+    enabled = true
+  }
+}
