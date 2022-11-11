@@ -86,6 +86,7 @@
     },
     "deploy": {
       "executor": "nx:run-commands",
+      "dependsOn": ["build"],
       "options": {
         "command": "aws s3 sync dist/apps/home s3://vendittelli.co.uk --delete"
       }
