@@ -1,5 +1,10 @@
 resource "aws_s3_bucket" "site" {
   bucket = var.site_domain
+
+  tags = {
+    Name = "Root site"
+    Env = "prod"
+  }
 }
 
 resource "aws_s3_bucket_website_configuration" "site" {
@@ -7,10 +12,6 @@ resource "aws_s3_bucket_website_configuration" "site" {
 
   index_document {
     suffix = "index.html"
-  }
-
-  error_document {
-    key = "error.html"
   }
 }
 
@@ -42,6 +43,11 @@ resource "aws_s3_bucket_policy" "site" {
 
 resource "aws_s3_bucket" "www" {
   bucket = "www.${var.site_domain}"
+
+  tags = {
+    Name = "www redirect"
+    Env = "prod"
+  }
 }
 
 resource "aws_s3_bucket_acl" "www" {

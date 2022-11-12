@@ -5,6 +5,7 @@
     "esbenp.prettier-vscode",
     "firsttris.vscode-jest-runner",
     "gamunu.vscode-yarn",
+    "hashicorp.hcl",
     "hashicorp.terraform",
     "mrmlnc.vscode-json5",
     "nrwl.angular-console",

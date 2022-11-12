@@ -1,3 +1,10 @@
 {
-  "conventionalCommits.scopes": ["common-ui", "e2e", "home", "security"]
+  "conventionalCommits.scopes": [
+    "common-ui",
+    "e2e",
+    "home",
+    "security",
+    "terraform"
+  ],
+  "cSpell.words": ["tflint"]
 }

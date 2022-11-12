@@ -1,4 +1,12 @@
+/**
+ * # Personal Website
+ *
+ * The infrastructure for my personal website: [vendittelli.co.uk](https://vendittelli.co.uk/)
+ */
+
 terraform {
+  required_version = "~> 1.3.4"
+
   required_providers {
     aws = {
       source  = "hashicorp/aws"
