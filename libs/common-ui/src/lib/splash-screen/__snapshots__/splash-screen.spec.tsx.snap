@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SplashScreen should render successfully 1`] = `
+<body>
+  <div>
+    <main
+      class="container"
+    >
+      Test
+      <button>
+        Dismiss
+      </button>
+    </main>
+  </div>
+</body>
+`;
