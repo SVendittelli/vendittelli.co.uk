@@ -1,6 +1,8 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
+terraform-docs terraform && git add terraform/README.md
 npx pretty-quick --staged
+tflint
 yarn nx affected --target=lint
 yarn nx affected --target=test --code-coverage

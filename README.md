@@ -18,6 +18,13 @@ Tested with [node](https://nodejs.org/) >= v18 and [Yarn 1](https://classic.yarn
 
 Optionally, using [Volta](https://volta.sh/) for managing node and yarn versions.
 
+### Manual
+
+The following tools are outside of npm and must be installed manually.
+
+- [TFLint](https://github.com/terraform-linters/tflint)
+- [terraform-docs](https://github.com/terraform-docs/terraform-docs)
+
 ## Set up
 
 To download the repository and install dependencies, run the following commands:
