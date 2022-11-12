@@ -68,6 +68,7 @@ resource "cloudflare_zone_settings_override" "security" {
   settings {
     always_use_https         = "on"
     automatic_https_rewrites = "on"
+    min_tls_version          = "1.2"
     ssl                      = "flexible"
     tls_1_3                  = "on"
     security_header {
