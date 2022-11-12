@@ -1,4 +1,4 @@
-name: TFLint
+name: TFLint & terraform-docs
 
 on:
   push:
@@ -35,3 +35,9 @@ jobs:
 
       - name: Run TFLint
         run: tflint -f compact
+
+      - name: Check terraform-docs
+        uses: terraform-docs/gh-actions@v1
+        with:
+          working-dir: terraform
+          fail-on-diff: 'true'
