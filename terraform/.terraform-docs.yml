@@ -1,0 +1,11 @@
+formatter: markdown table
+
+output:
+  file: README.md
+  mode: replace
+
+settings:
+  hide-empty: true
+  # Disable raw HTML in markdown
+  anchor: false
+  html: false
