@@ -1,7 +1,40 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`App should have a name in the title 1`] = `
-<h1>
-  Sam Vendittelli | Full-stack Web Developer
-</h1>
+exports[`App should show the home page after dismissing the splash screen 1`] = `
+<body>
+  <div>
+    <header
+      class="container"
+    >
+      <h1>
+        Sam Vendittelli | Full-stack Web Developer
+      </h1>
+    </header>
+  </div>
+</body>
+`;
+
+exports[`App should show the splash screen 1`] = `
+<body>
+  <div>
+    <main
+      class="container"
+    >
+      <h1>
+        This site is a work in progress
+      </h1>
+      <p>
+        You can see the source code for it on GitHub
+      </p>
+      <a
+        href="https://github.com/SVendittelli/vendittelli.co.uk"
+      >
+        SVendittelli/vendittelli.co.uk
+      </a>
+      <button>
+        Show me the site anyway
+      </button>
+    </main>
+  </div>
+</body>
 `;

@@ -1,4 +1,4 @@
-import { render } from '@testing-library/react';
+import { fireEvent, render, screen } from '@testing-library/react';
 
 import App from './app';
 
@@ -9,9 +9,17 @@ describe('App', () => {
     expect(baseElement).toBeDefined();
   });
 
-  it('should have a name in the title', () => {
-    const { getByText } = render(<App />);
+  it('should show the splash screen', () => {
+    const { baseElement } = render(<App />);
 
-    expect(getByText(/Sam Vendittelli/)).toMatchSnapshot();
+    expect(baseElement).toMatchSnapshot();
+  });
+
+  it('should show the home page after dismissing the splash screen', async () => {
+    const { baseElement } = render(<App />);
+
+    fireEvent.click(screen.getByRole('button'));
+
+    expect(baseElement).toMatchSnapshot();
   });
 });
