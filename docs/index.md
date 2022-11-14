@@ -1,7 +1,4 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
 layout: home
 title: Home
 ---
@@ -10,7 +7,9 @@ The documentation is a work in progress.
 
 ## Topics
 
-{% for topic in site.data.topics %}
+{% assign topics = site.data.topics | sort: "title" %}
+{%- for topic in topics -%}
 
 1. [{{ topic.title }}]({{ topic.path }})
-   {% endfor %}
+
+{% endfor -%}

@@ -4,3 +4,5 @@
   title: Infrastructure
 - path: pages/technology
   title: Technology
+- path: pages/dependencies.md
+  title: Dependencies

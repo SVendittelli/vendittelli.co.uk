@@ -15,16 +15,9 @@ My personal website. An [MIT](https://github.com/SVendittelli/vendittelli.co.uk/
 
 ## Dependencies
 
-Tested with [node](https://nodejs.org/) >= v18 and [Yarn 1](https://classic.yarnpkg.com/).
+The project is rested with [node](https://nodejs.org/) >= v18 and [Yarn 1](https://classic.yarnpkg.com/).
 
-Optionally, using [Volta](https://volta.sh/) for managing node and yarn versions.
-
-### Manual installation
-
-The following tools are outside of npm and must be installed manually.
-
-- [TFLint](https://github.com/terraform-linters/tflint)
-- [terraform-docs](https://github.com/terraform-docs/terraform-docs)
+See [`dependencies.md`](docs/pages/dependencies.md) for more information.
 
 ## Set up
 
