@@ -18,14 +18,20 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Documentation
+title: Personal Website Documentation
+description: >-
+  The documentation for Sam Vendittell's personal website.
 
 domain: svendittelli.github.io # if you want to force HTTPS, specify the domain without the http at the start, e.g. example.com
 url: https://svendittelli.github.io # the base hostname and protocol for your site, e.g. http://example.com
-baseurl: /vendittelli.co.uk/ # place folder name if the site is served in a subfolder
 
-# Build settings
-theme: minima
+minima:
+  skin: auto
+
+header_pages:
+  - pages/about.md
+
+remote_theme: jekyll/minima
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
