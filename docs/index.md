@@ -10,6 +10,7 @@ The documentation is a work in progress.
 
 ## Topics
 
-- [Technology](pages/technology/index.md)
-- [CI/CD](pages/ci.md)
-- [Infrastructure](pages/infrastructure/index.md)
+{% for topic in site.data.topics %}
+
+1. [{{ topic.title }}]({{ topic.path }})
+   {% endfor %}

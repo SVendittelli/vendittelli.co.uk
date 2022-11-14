@@ -52,12 +52,8 @@ Run the following command to build the home application and serve it with fast r
 yarn start
 ```
 
-## Deploying
+## Documentation
 
-Any commits to the `main` branch are built and deployed automatically.
+> See the live docs at [docs.vendittelli.co.uk](https://docs.vendittelli.co.uk/)
 
-The infrastructure is provisioned on [AWS S3](https://aws.amazon.com/s3/) and [Cloudflare](https://www.cloudflare.com/) automatically using [Terraform Cloud](https://app.terraform.io/). See the [`terraform`](./terraform/) folder for more details.
-
-The code itself is built and deployed using the [CI workflow](./.github/workflows/ci.yml). This utilises [Nx Cloud](https://cloud.nx.app/) with Distributed Task Execution & Distributed Cache to speed up builds.
-
-Only modified apps will be rebuilt and deployed.
+The project's documentation is deployed using GitHub pages from the [`docs`](docs/index.md) folder.

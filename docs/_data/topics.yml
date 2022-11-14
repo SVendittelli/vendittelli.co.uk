@@ -1,0 +1,6 @@
+- path: pages/devops
+  title: DevOps
+- path: pages/infrastructure
+  title: Infrastructure
+- path: pages/technology
+  title: Technology

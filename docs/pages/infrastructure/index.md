@@ -3,6 +3,10 @@ layout: page
 title: Infrastructure
 ---
 
-The website is deployed to an S3 bucket sitting behind Cloudfront to manage the DNS.
+The infrastructure is provisioned on [AWS S3](https://aws.amazon.com/s3/) and [Cloudflare](https://www.cloudflare.com/) automatically using [Terraform](https://www.terraform.io/) for Infrastructure as Code.
 
-The project uses [Terraform](./terraform.md) for Infrastructure as Code (IaS) to manage all deployed resources.
+## Technologies
+
+- [Terraform](terraform.md)
+- [AWS](aws.md)
+- [Cloudflare](cloudflare.md)
