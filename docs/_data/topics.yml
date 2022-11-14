@@ -1,0 +1,12 @@
+- path: pages/devops
+  title: DevOps
+- path: pages/infrastructure
+  title: Infrastructure
+- path: pages/dependencies
+  title: Dependencies
+- path: security
+  title: Security
+- path: pages/seo
+  title: Search Engine Optimisation (SEO)
+- path: pages/development
+  title: Development

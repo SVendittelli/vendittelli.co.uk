@@ -6,5 +6,5 @@
     "security",
     "terraform"
   ],
-  "cSpell.words": ["commitlint", "tflint"]
+  "cSpell.words": ["codespaces", "commitlint", "devcontainer", "HSTS", "tflint"]
 }

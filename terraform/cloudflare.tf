@@ -8,6 +8,7 @@ locals {
   zone_id = data.cloudflare_zones.domain.zones[0].id
 }
 
+# apex domain CNAME record
 resource "cloudflare_record" "site_cname" {
   zone_id = local.zone_id
   name    = var.site_domain
@@ -18,10 +19,22 @@ resource "cloudflare_record" "site_cname" {
   proxied = true
 }
 
+# www subdomain pointing to apex domain
 resource "cloudflare_record" "www" {
   zone_id = local.zone_id
   name    = "www"
   value   = var.site_domain
+  type    = "CNAME"
+
+  ttl     = 1
+  proxied = true
+}
+
+# docs subdomain pointing to GitHub pages
+resource "cloudflare_record" "docs" {
+  zone_id = local.zone_id
+  name    = "docs"
+  value   = "${var.github_user}.github.io"
   type    = "CNAME"
 
   ttl     = 1
@@ -81,6 +94,7 @@ resource "cloudflare_zone_settings_override" "security" {
 }
 
 # Enable security headers using Managed Meaders
+# https://developers.cloudflare.com/rules/transform/managed-transforms/reference/
 resource "cloudflare_managed_headers" "managed_headers" {
   zone_id = local.zone_id
 

@@ -31,6 +31,7 @@ The infrastructure for my personal website: [vendittelli.co.uk](https://venditte
 | [aws_s3_bucket_website_configuration.www](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket_website_configuration) | resource |
 | [cloudflare_managed_headers.managed_headers](https://registry.terraform.io/providers/cloudflare/cloudflare/latest/docs/resources/managed_headers) | resource |
 | [cloudflare_record.dmarc](https://registry.terraform.io/providers/cloudflare/cloudflare/latest/docs/resources/record) | resource |
+| [cloudflare_record.docs](https://registry.terraform.io/providers/cloudflare/cloudflare/latest/docs/resources/record) | resource |
 | [cloudflare_record.domainkey](https://registry.terraform.io/providers/cloudflare/cloudflare/latest/docs/resources/record) | resource |
 | [cloudflare_record.site_cname](https://registry.terraform.io/providers/cloudflare/cloudflare/latest/docs/resources/record) | resource |
 | [cloudflare_record.spf1](https://registry.terraform.io/providers/cloudflare/cloudflare/latest/docs/resources/record) | resource |
@@ -43,6 +44,7 @@ The infrastructure for my personal website: [vendittelli.co.uk](https://venditte
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | aws\_region | The AWS region to put the bucket into | `string` | `"us-east-1"` | no |
+| github\_user | The GitHub username that owns the GitHub repo | `string` | n/a | yes |
 | site\_domain | The domain name to use for the static site | `string` | n/a | yes |
 
 ## Outputs
