@@ -3,7 +3,7 @@ resource "aws_s3_bucket" "site" {
 
   tags = {
     Name = "Root site"
-    Env = "prod"
+    Env  = "prod"
   }
 }
 
@@ -46,7 +46,7 @@ resource "aws_s3_bucket" "www" {
 
   tags = {
     Name = "www redirect"
-    Env = "prod"
+    Env  = "prod"
   }
 }
 

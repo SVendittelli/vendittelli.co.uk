@@ -8,3 +8,8 @@ variable "site_domain" {
   type        = string
   description = "The domain name to use for the static site"
 }
+
+variable "github_user" {
+  type        = string
+  description = "The GitHub username that owns the GitHub repo"
+}
