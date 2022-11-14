@@ -38,4 +38,6 @@ I use [Volta](https://volta.sh/) for automatically managing `node` and `yarn` ve
 
 [Renovate](https://github.com/renovatebot/renovate) is a tool that automatically checks for out of date dependencies and updates them to the latest version. It will create a pull request for each update, runs all the CI pipelines against it, and if they all pass, merge it. The configuration can be found in [`.github/renovate.json`]({{ site.github.repository_url }}/tree/main/.github/renovate.json).
 
-All the update commits are from [renovate[bot]]({{ site.github.repository_url }}/commits?author=renovate%5Bbot%5D).
+Open version updates can be found on the [Dependency Dashboard]({{ site.github.issues_url }}/9).
+
+All the previous update commits are from [renovate[bot]]({{ site.github.repository_url }}/commits?author=renovate%5Bbot%5D).

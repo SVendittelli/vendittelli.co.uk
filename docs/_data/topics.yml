@@ -6,3 +6,5 @@
   title: Technology
 - path: pages/dependencies.md
   title: Dependencies
+- path: security
+  title: Security
