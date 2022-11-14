@@ -94,6 +94,7 @@ resource "cloudflare_zone_settings_override" "security" {
 }
 
 # Enable security headers using Managed Meaders
+# https://developers.cloudflare.com/rules/transform/managed-transforms/reference/
 resource "cloudflare_managed_headers" "managed_headers" {
   zone_id = local.zone_id
 
