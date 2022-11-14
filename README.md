@@ -19,7 +19,7 @@ Tested with [node](https://nodejs.org/) >= v18 and [Yarn 1](https://classic.yarn
 
 Optionally, using [Volta](https://volta.sh/) for managing node and yarn versions.
 
-### Manual
+### Manual installation
 
 The following tools are outside of npm and must be installed manually.
 
