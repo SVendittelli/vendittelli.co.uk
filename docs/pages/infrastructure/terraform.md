@@ -25,4 +25,4 @@ All the infrastructure is defined as declarative config in a git repository. Usi
 
 I use [Terraform Cloud](https://developer.hashicorp.com/terraform/cloud-docs) to achieve this. It can connect to [VCS Providers](https://developer.hashicorp.com/terraform/cloud-docs/vcs) to automatically initiate Terraform runs when changes are committed to the specified branch and by automatically predicting how pull requests will affect infrastructure.
 
-This has the added benefit of not needing infrastructure credentials on a local machine to be able to deploy. This means development can be done on another machine (or even in a [devcontainer](../devcontainers.md)) without preventing deployment.
+This has the added benefit of not needing infrastructure credentials on a local machine to be able to deploy. This means development can be done on another machine (or even in a [devcontainer](../development/devcontainers.md)) without preventing deployment.

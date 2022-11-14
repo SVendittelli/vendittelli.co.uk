@@ -12,7 +12,7 @@ The following tools are outside of npm ecosystem and must be installed manually.
 - [TFLint](https://github.com/terraform-linters/tflint)
 - [terraform-docs](https://github.com/terraform-docs/terraform-docs)
 
-## Tooling (Optional)
+## Optional Tooling
 
 ### Commitizen
 

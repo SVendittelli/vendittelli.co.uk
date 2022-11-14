@@ -2,11 +2,11 @@
   title: DevOps
 - path: pages/infrastructure
   title: Infrastructure
-- path: pages/technology
-  title: Technology
 - path: pages/dependencies
   title: Dependencies
 - path: security
   title: Security
 - path: pages/seo
   title: Search Engine Optimisation (SEO)
+- path: pages/development
+  title: Development
