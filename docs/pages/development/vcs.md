@@ -28,3 +28,10 @@ For details on what "affected" projects are, see [Nx](nx.md).
 Runs the end-to-end tests for all affected projects.
 
 For details on what "affected" projects are, see [Nx](nx.md).
+
+## GitHub
+
+<!-- TODO talk about:
+Branch protection
+Commit signing
+Link to CI/CD -->
