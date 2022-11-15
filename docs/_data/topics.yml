@@ -10,3 +10,5 @@
   title: Search Engine Optimisation (SEO)
 - path: pages/development
   title: Development
+- path: architecture
+  title: Architecture
