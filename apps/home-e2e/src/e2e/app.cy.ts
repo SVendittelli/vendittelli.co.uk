@@ -1,10 +1,13 @@
-import { getHeader } from '../support/app.po';
+import { getTitle } from '../support/app.po';
 
 describe('home', () => {
   beforeEach(() => cy.visit('/'));
 
-  it('should display name', () => {
-    // Function helper example, see `../support/app.po.ts` file
-    getHeader().contains('Sam Vendittelli');
+  it('should display work in progress splash screen until dismissed', () => {
+    getTitle().contains('This site is a work in progress');
+
+    cy.get('button').click();
+
+    getTitle().contains('Sam Vendittelli | Full-stack Web Developer');
   });
 });
