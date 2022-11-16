@@ -5,5 +5,14 @@
     ":pinAllExceptPeerDependencies",
     ":automergeMinor",
     ":semanticCommitTypeAll(chore)"
+  ],
+  "packageRules": [
+    {
+      "description": "Only update github-pages gem",
+      "matchManagers": ["bundler"],
+      "matchPackagePatterns": ["*"],
+      "excludePackagePatterns": ["github-pages"],
+      "enabled": false
+    }
   ]
 }
