@@ -31,7 +31,12 @@ For details on what "affected" projects are, see [Nx](nx.md).
 
 ## GitHub
 
-<!-- TODO talk about:
-Branch protection
-Commit signing
-Link to CI/CD -->
+As I am using [GitOps](../infrastructure/iac.md#gitops), it is imperative that all commits on the `main` are in a production ready state.
+
+Using Github's [protected branches](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/defining-the-mergeability-of-pull-requests/about-protected-branches), any commits directly to the `main` branch are rejected. For a commit to be included on `main` it must be:
+
+1. [A verified signed commit](https://docs.github.com/en/authentication/managing-commit-signature-verification/about-commit-signature-verification);
+2. Committed to a branch other than `main` and merged via pull request;
+3. All required [GitHub actions](../devops/ci-cd.md) must have been run against it and pass.
+
+This ensures that, in so far as possible, the `main` branch is production ready.

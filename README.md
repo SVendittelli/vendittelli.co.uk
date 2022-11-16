@@ -1,12 +1,13 @@
 # Personal Website
 
-[![CI Workflow](https://github.com/SVendittelli/vendittelli.co.uk/actions/workflows/ci.yml/badge.svg)](https://github.com/SVendittelli/vendittelli.co.uk/actions/workflows/ci.yml)
-[![MIT Licence](https://img.shields.io/github/license/SVendittelli/vendittelli.co.uk)](https://github.com/SVendittelli/vendittelli.co.uk/blob/main/LICENSE)
-[![Deployment](https://img.shields.io/github/deployments/SVendittelli/vendittelli.co.uk/production?label=deploy)](https://github.com/SVendittelli/vendittelli.co.uk/deployments/activity_log?environment=production)
-[![Website Status](https://img.shields.io/website?url=https%3A%2F%2Fvendittelli.co.uk)](https://vendittelli.co.uk/)
+[![CI workflow](https://github.com/SVendittelli/vendittelli.co.uk/actions/workflows/ci.yml/badge.svg)](https://github.com/SVendittelli/vendittelli.co.uk/actions/workflows/ci.yml)
+[![MIT licence](https://img.shields.io/github/license/SVendittelli/vendittelli.co.uk)](https://github.com/SVendittelli/vendittelli.co.uk/blob/main/LICENSE)
+[![Production deployment](https://img.shields.io/github/deployments/SVendittelli/vendittelli.co.uk/production?label=deploy)](https://github.com/SVendittelli/vendittelli.co.uk/deployments/activity_log?environment=production)
+[![Documentation deployment](https://img.shields.io/github/deployments/SVendittelli/vendittelli.co.uk/github-pages?label=docs-deploy)](https://github.com/SVendittelli/vendittelli.co.uk/deployments/activity_log?environment=github-pages)
+[![Website status](https://img.shields.io/website?url=https%3A%2F%2Fvendittelli.co.uk)](https://vendittelli.co.uk/)
 [![UptimeRobot](https://img.shields.io/uptimerobot/ratio/m793028518-cb286cb8b65c7c745debebe1)](https://stats.uptimerobot.com/80zk0uXpKG)
 [![Mozilla HTTP Observatory](https://img.shields.io/mozilla-observatory/grade/vendittelli.co.uk?publish)](https://observatory.mozilla.org/analyze/vendittelli.co.uk)
-![Snyk Vulnerabilities](https://img.shields.io/snyk/vulnerabilities/github/SVendittelli/vendittelli.co.uk)
+![Snyk vulnerabilities](https://img.shields.io/snyk/vulnerabilities/github/SVendittelli/vendittelli.co.uk)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 

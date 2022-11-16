@@ -7,6 +7,9 @@ The infrastructure is provisioned on [AWS S3](https://aws.amazon.com/s3/) and [C
 
 ## Technologies
 
-- [Terraform](terraform.md)
 - [AWS](aws.md)
 - [Cloudflare](cloudflare.md)
+
+## See also
+
+- [Infrastructure as Code (IaC)](../devops/iac.md)
