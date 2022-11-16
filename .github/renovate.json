@@ -6,6 +6,8 @@
     ":automergeMinor",
     ":semanticCommitTypeAll(chore)"
   ],
+  "labels": ["dependencies"],
+  "dependencyDashboardLabels": ["dependencies"],
   "packageRules": [
     {
       "description": "Only update github-pages gem",
