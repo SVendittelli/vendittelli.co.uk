@@ -21,7 +21,7 @@ Initially I was using the [Terraform CLI](https://developer.hashicorp.com/terraf
 
 GitOps combines the benefits of IaC, [pull requests](../development/vcs.md), and [CI/CD](ci-cd.md). The heart of GitOps is as follows:
 
-All the infrastructure is defined as declarative config in a git repository. Using automated pipelines, any changes on the `main` branch are automatically applied to the infrastructure providers. Any changes to main must be submitted via pull request, which supplies a diff of the infrastructure after the merge.
+All the infrastructure is defined as declarative config in a git repository. Using [automated pipelines](ci-cd.md), any changes on the `main` branch are automatically applied to the infrastructure providers. Any changes to main must be submitted via pull request, which supplies a diff of the infrastructure after the merge.
 
 I use [Terraform Cloud](https://developer.hashicorp.com/terraform/cloud-docs) to achieve this. It can connect to [VCS Providers](https://developer.hashicorp.com/terraform/cloud-docs/vcs) to automatically initiate Terraform runs when changes are committed to the specified branch and by automatically predicting how pull requests will affect infrastructure.
 
