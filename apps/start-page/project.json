@@ -1,0 +1,93 @@
+{
+  "name": "start-page",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/start-page/src",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/webpack:webpack",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "compiler": "babel",
+        "outputPath": "dist/apps/start-page",
+        "index": "apps/start-page/src/index.html",
+        "baseHref": "/",
+        "main": "apps/start-page/src/main.tsx",
+        "polyfills": "apps/start-page/src/polyfills.ts",
+        "tsConfig": "apps/start-page/tsconfig.app.json",
+        "assets": [
+          "apps/start-page/src/favicon.ico",
+          "apps/start-page/src/assets",
+          "apps/start-page/src/manifest.json"
+        ],
+        "styles": ["apps/start-page/src/styles.scss"],
+        "scripts": [],
+        "webpackConfig": "@nrwl/react/plugins/webpack"
+      },
+      "configurations": {
+        "development": {
+          "extractLicenses": false,
+          "optimization": false,
+          "sourceMap": true,
+          "vendorChunk": true
+        },
+        "production": {
+          "fileReplacements": [
+            {
+              "replace": "apps/start-page/src/environments/environment.ts",
+              "with": "apps/start-page/src/environments/environment.prod.ts"
+            }
+          ],
+          "optimization": true,
+          "outputHashing": "all",
+          "sourceMap": false,
+          "namedChunks": false,
+          "extractLicenses": true,
+          "vendorChunk": false
+        }
+      }
+    },
+    "serve": {
+      "executor": "@spaceribs/nx-web-ext:serve",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "start-page:build",
+        "hmr": true
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "start-page:build:development"
+        },
+        "production": {
+          "buildTarget": "start-page:build:production",
+          "hmr": false
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/start-page/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/apps/start-page"],
+      "options": {
+        "jestConfig": "apps/start-page/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "package": {
+      "executor": "@spaceribs/nx-web-ext:package",
+      "dependsOn": ["build"],
+      "options": {
+        "sourceDir": "dist/apps/start-page",
+        "artifactsDir": "/Users/i336734/SAPDevelop/personal/vendittelli.co.uk/dist/apps"
+      }
+    }
+  },
+  "tags": []
+}

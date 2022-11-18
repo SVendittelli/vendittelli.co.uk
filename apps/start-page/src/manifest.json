@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json.schemastore.org/webextension.json",
+  "manifest_version": 2,
+  "name": "Sam Vendittelli's Start Page",
+  "short_name": "Start Page",
+  "description": "My start page",
+  "version": "0.0.1",
+  "permissions": ["storage"],
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  }
+}

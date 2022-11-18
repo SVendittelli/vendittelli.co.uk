@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App should render successfully 1`] = `
+<body>
+  <div>
+    <div>
+      This is the start page
+    </div>
+  </div>
+</body>
+`;
