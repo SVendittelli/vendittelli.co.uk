@@ -1,5 +1,12 @@
+import { Box, Text } from 'dracula-ui';
+import 'dracula-ui/styles/dracula-ui.css';
+
 function App() {
-  return <div>This is the start page</div>;
+  return (
+    <Box>
+      <Text>This is the start page</Text>
+    </Box>
+  );
 }
 
 export default App;

@@ -3,8 +3,14 @@
 exports[`App should render successfully 1`] = `
 <body>
   <div>
-    <div>
-      This is the start page
+    <div
+      class="drac-box"
+    >
+      <span
+        class="drac-text drac-line-height drac-text-white"
+      >
+        This is the start page
+      </span>
     </div>
   </div>
 </body>
