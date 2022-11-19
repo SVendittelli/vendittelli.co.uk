@@ -86,7 +86,7 @@ resource "cloudflare_zone_settings_override" "security" {
     tls_1_3                  = "on"
     security_header {
       enabled            = true
-      max_age            = 604800
+      max_age            = 2592000
       include_subdomains = true
       preload            = false
     }
