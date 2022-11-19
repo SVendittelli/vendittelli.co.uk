@@ -22,6 +22,9 @@
           "apps/start-page/src/manifest.json"
         ],
         "styles": ["apps/start-page/src/styles.scss"],
+        "stylePreprocessorOptions": {
+          "includePaths": ["libs/common-ui/src/lib/styles"]
+        },
         "scripts": [],
         "webpackConfig": "@nrwl/react/plugins/webpack"
       },
@@ -89,5 +92,6 @@
       }
     }
   },
-  "tags": []
+  "tags": [],
+  "implicitDependencies": ["common-ui"]
 }

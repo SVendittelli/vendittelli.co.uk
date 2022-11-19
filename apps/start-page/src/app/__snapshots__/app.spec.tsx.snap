@@ -4,13 +4,20 @@ exports[`App should render successfully 1`] = `
 <body>
   <div>
     <div
-      class="drac-box"
+      class="drac-box container drac-h-full drac-w-full"
     >
-      <span
-        class="drac-text drac-line-height drac-text-white"
+      <form
+        class="container"
+        role="search"
       >
-        This is the start page
-      </span>
+        <input
+          aria-label="Search DuckDuckGo"
+          class="drac-input drac-input-white drac-text-white"
+          name="query"
+          placeholder="Search..."
+          type="search"
+        />
+      </form>
     </div>
   </div>
 </body>
