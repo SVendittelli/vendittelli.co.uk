@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Search should render successfully 1`] = `
+<body>
+  <div>
+    <form
+      class="container"
+      role="search"
+    >
+      <input
+        aria-label="Search DuckDuckGo"
+        class="drac-input drac-input-white drac-text-white"
+        name="query"
+        placeholder="Search..."
+        type="search"
+      />
+    </form>
+  </div>
+</body>
+`;

@@ -11,6 +11,7 @@
     "commitlint",
     "devcontainer",
     "HSTS",
+    "newtab",
     "snyk",
     "tflint"
   ]

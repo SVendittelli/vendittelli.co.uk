@@ -1,0 +1,16 @@
+@import 'breakpoints';
+
+.container {
+  width: 200px;
+  margin: auto;
+
+  @include for-tablet-portrait-up {
+    width: 320px;
+  }
+  @include for-tablet-landscape-up {
+    width: 600px;
+  }
+  @include for-desktop-up {
+    width: 720px;
+  }
+}

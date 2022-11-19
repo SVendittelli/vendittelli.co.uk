@@ -1,31 +1,27 @@
 {
-  "name": "home",
+  "name": "start-page",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "apps/home/src",
+  "sourceRoot": "apps/start-page/src",
   "projectType": "application",
   "targets": {
     "build": {
       "executor": "@nrwl/webpack:webpack",
-      "dependsOn": ["prepare"],
       "outputs": ["{options.outputPath}"],
       "defaultConfiguration": "production",
       "options": {
         "compiler": "babel",
-        "outputPath": "dist/apps/home",
-        "index": "apps/home/src/index.html",
+        "outputPath": "dist/apps/start-page",
+        "index": "apps/start-page/src/index.html",
         "baseHref": "/",
-        "main": "apps/home/src/main.tsx",
-        "polyfills": "apps/home/src/polyfills.ts",
-        "tsConfig": "apps/home/tsconfig.app.json",
+        "main": "apps/start-page/src/main.tsx",
+        "polyfills": "apps/start-page/src/polyfills.ts",
+        "tsConfig": "apps/start-page/tsconfig.app.json",
         "assets": [
-          "apps/home/src/favicon.ico",
-          "apps/home/src/assets",
-          "apps/home/src/.well-known",
-          "apps/home/src/humans.txt",
-          "apps/home/src/robots.txt",
-          "apps/home/src/sitemap.xml"
+          "apps/start-page/src/favicon.ico",
+          "apps/start-page/src/assets",
+          "apps/start-page/src/manifest.json"
         ],
-        "styles": ["apps/home/src/styles.scss"],
+        "styles": ["apps/start-page/src/styles.scss"],
         "stylePreprocessorOptions": {
           "includePaths": ["libs/common-ui/src/lib/styles"]
         },
@@ -42,8 +38,8 @@
         "production": {
           "fileReplacements": [
             {
-              "replace": "apps/home/src/environments/environment.ts",
-              "with": "apps/home/src/environments/environment.prod.ts"
+              "replace": "apps/start-page/src/environments/environment.ts",
+              "with": "apps/start-page/src/environments/environment.prod.ts"
             }
           ],
           "optimization": true,
@@ -56,19 +52,18 @@
       }
     },
     "serve": {
-      "executor": "@nrwl/webpack:dev-server",
-      "dependsOn": ["prepare"],
+      "executor": "@spaceribs/nx-web-ext:serve",
       "defaultConfiguration": "development",
       "options": {
-        "buildTarget": "home:build",
+        "buildTarget": "start-page:build",
         "hmr": true
       },
       "configurations": {
         "development": {
-          "buildTarget": "home:build:development"
+          "buildTarget": "start-page:build:development"
         },
         "production": {
-          "buildTarget": "home:build:production",
+          "buildTarget": "start-page:build:production",
           "hmr": false
         }
       }
@@ -77,34 +72,26 @@
       "executor": "@nrwl/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["apps/home/**/*.{ts,tsx,js,jsx}"]
+        "lintFilePatterns": ["apps/start-page/**/*.{ts,tsx,js,jsx}"]
       }
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "outputs": ["coverage/apps/start-page"],
       "options": {
-        "jestConfig": "apps/home/jest.config.ts",
+        "jestConfig": "apps/start-page/jest.config.ts",
         "passWithNoTests": true
       }
     },
-    "deploy": {
-      "executor": "nx:run-commands",
+    "package": {
+      "executor": "@spaceribs/nx-web-ext:package",
       "dependsOn": ["build"],
       "options": {
-        "command": "aws s3 sync dist/apps/home s3://vendittelli.co.uk --delete"
-      }
-    },
-    "prepare": {
-      "executor": "nx:run-commands",
-      "outputs": [
-        "{workspaceRoot}/apps/home/src/humans.txt",
-        "{workspaceRoot}/apps/home/src/sitemap.xml"
-      ],
-      "options": {
-        "command": "node apps/home/utils/prepare.js"
+        "sourceDir": "dist/apps/start-page",
+        "artifactsDir": "/Users/i336734/SAPDevelop/personal/vendittelli.co.uk/dist/apps"
       }
     }
   },
-  "tags": []
+  "tags": [],
+  "implicitDependencies": ["common-ui"]
 }
