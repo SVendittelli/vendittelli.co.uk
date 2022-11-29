@@ -16,6 +16,7 @@
         "gamunu.vscode-yarn",
         "hashicorp.hcl",
         "hashicorp.terraform",
+        "mongodb.mongodb-vscode",
         "mrmlnc.vscode-json5",
         "nrwl.angular-console",
         "redhat.vscode-yaml",

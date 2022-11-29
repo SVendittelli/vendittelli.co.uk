@@ -16,6 +16,10 @@ terraform {
       source  = "cloudflare/cloudflare"
       version = "3.28.0"
     }
+    mongodbatlas = {
+      source  = "mongodb/mongodbatlas"
+      version = "1.4.6"
+    }
   }
 }
 
@@ -24,3 +28,5 @@ provider "aws" {
 }
 
 provider "cloudflare" {}
+
+provider "mongodbatlas" {}

@@ -10,6 +10,7 @@ The infrastructure for my personal website: [vendittelli.co.uk](https://venditte
 | terraform | 1.3.5 |
 | aws | 4.40.0 |
 | cloudflare | 3.28.0 |
+| mongodbatlas | 1.4.6 |
 
 ## Providers
 
@@ -17,6 +18,7 @@ The infrastructure for my personal website: [vendittelli.co.uk](https://venditte
 |------|---------|
 | aws | 4.40.0 |
 | cloudflare | 3.28.0 |
+| mongodbatlas | 1.4.6 |
 
 ## Resources
 
@@ -38,14 +40,22 @@ The infrastructure for my personal website: [vendittelli.co.uk](https://venditte
 | [cloudflare_record.spf1](https://registry.terraform.io/providers/cloudflare/cloudflare/3.28.0/docs/resources/record) | resource |
 | [cloudflare_record.www](https://registry.terraform.io/providers/cloudflare/cloudflare/3.28.0/docs/resources/record) | resource |
 | [cloudflare_zone_settings_override.security](https://registry.terraform.io/providers/cloudflare/cloudflare/3.28.0/docs/resources/zone_settings_override) | resource |
+| [mongodbatlas_cluster.my_cluster](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.4.6/docs/resources/cluster) | resource |
+| [mongodbatlas_database_user.my_user](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.4.6/docs/resources/database_user) | resource |
+| [mongodbatlas_project.my_project](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.4.6/docs/resources/project) | resource |
+| [mongodbatlas_project_ip_access_list.my_ipaddress](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.4.6/docs/resources/project_ip_access_list) | resource |
 | [cloudflare_zones.domain](https://registry.terraform.io/providers/cloudflare/cloudflare/3.28.0/docs/data-sources/zones) | data source |
 
 ## Inputs
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| aws\_region | The AWS region to put the bucket into | `string` | `"us-east-1"` | no |
+| aws\_region | The AWS region to deploy resources to | `string` | `"eu-west-1"` | no |
 | github\_user | The GitHub username that owns the GitHub repo | `string` | n/a | yes |
+| mongodbatlas\_accesslistip | An IP address permitted to access the Mongo DB cluster | `string` | n/a | yes |
+| mongodbatlas\_database\_user\_password | The MongoDB Atlas admin user password | `string` | n/a | yes |
+| mongodbatlas\_database\_username | The MongoDB Atlas admin username | `string` | n/a | yes |
+| mongodbatlas\_org\_id | The MongoDB Atlas organisation id | `string` | n/a | yes |
 | site\_domain | The domain name to use for the static site | `string` | n/a | yes |
 
 ## Outputs
@@ -53,6 +63,7 @@ The infrastructure for my personal website: [vendittelli.co.uk](https://venditte
 | Name | Description |
 |------|-------------|
 | bucket\_endpoint | Bucket endpoint |
+| connection\_strings | n/a |
 | domain\_name | Website endpoint |
 | website\_bucket\_name | Name (id) of the bucket |
 <!-- END_TF_DOCS -->

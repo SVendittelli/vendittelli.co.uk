@@ -12,3 +12,7 @@ output "domain_name" {
   description = "Website endpoint"
   value       = var.site_domain
 }
+
+output "connection_strings" {
+  value = mongodbatlas_cluster.aoe.connection_strings.0.standard_srv
+}
