@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Civilisation should render successfully 1`] = `
+<body>
+  <div>
+    <h1>
+      Civilisation: 
+      name
+    </h1>
+    <p>
+      {"id":"id","name":"name"}
+    </p>
+  </div>
+</body>
+`;
