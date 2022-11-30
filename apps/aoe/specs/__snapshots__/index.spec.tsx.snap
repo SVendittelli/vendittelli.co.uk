@@ -4,7 +4,7 @@ exports[`Index should render successfully 1`] = `
 <body>
   <div>
     <h1>
-      AoE
+      AoE II: DE Random Civilisation Picker
     </h1>
     <ul>
       <li>
@@ -13,6 +13,11 @@ exports[`Index should render successfully 1`] = `
         >
           Aztecs
         </a>
+         -
+         
+        <button>
+          Ban
+        </button>
       </li>
       <li>
         <a
@@ -20,6 +25,11 @@ exports[`Index should render successfully 1`] = `
         >
           Bengalis
         </a>
+         -
+         
+        <button>
+          Ban
+        </button>
       </li>
       <li>
         <a
@@ -27,6 +37,11 @@ exports[`Index should render successfully 1`] = `
         >
           Berbers
         </a>
+         -
+         
+        <button>
+          Ban
+        </button>
       </li>
       <li>
         <a
@@ -34,6 +49,11 @@ exports[`Index should render successfully 1`] = `
         >
           Bohemians
         </a>
+         -
+         
+        <button>
+          Ban
+        </button>
       </li>
       <li>
         <a
@@ -41,6 +61,11 @@ exports[`Index should render successfully 1`] = `
         >
           Britons
         </a>
+         -
+         
+        <button>
+          Ban
+        </button>
       </li>
       <li>
         <a
@@ -48,6 +73,11 @@ exports[`Index should render successfully 1`] = `
         >
           Bulgarians
         </a>
+         -
+         
+        <button>
+          Ban
+        </button>
       </li>
       <li>
         <a
@@ -55,6 +85,11 @@ exports[`Index should render successfully 1`] = `
         >
           Burgundians
         </a>
+         -
+         
+        <button>
+          Ban
+        </button>
       </li>
       <li>
         <a
@@ -62,6 +97,11 @@ exports[`Index should render successfully 1`] = `
         >
           Burmese
         </a>
+         -
+         
+        <button>
+          Ban
+        </button>
       </li>
       <li>
         <a
@@ -69,6 +109,11 @@ exports[`Index should render successfully 1`] = `
         >
           Byzantines
         </a>
+         -
+         
+        <button>
+          Ban
+        </button>
       </li>
       <li>
         <a
@@ -76,6 +121,11 @@ exports[`Index should render successfully 1`] = `
         >
           Celts
         </a>
+         -
+         
+        <button>
+          Ban
+        </button>
       </li>
       <li>
         <a
@@ -83,6 +133,11 @@ exports[`Index should render successfully 1`] = `
         >
           Chinese
         </a>
+         -
+         
+        <button>
+          Ban
+        </button>
       </li>
       <li>
         <a
@@ -90,6 +145,11 @@ exports[`Index should render successfully 1`] = `
         >
           Cumans
         </a>
+         -
+         
+        <button>
+          Ban
+        </button>
       </li>
       <li>
         <a
@@ -97,6 +157,11 @@ exports[`Index should render successfully 1`] = `
         >
           Dravidians
         </a>
+         -
+         
+        <button>
+          Ban
+        </button>
       </li>
       <li>
         <a
@@ -104,6 +169,11 @@ exports[`Index should render successfully 1`] = `
         >
           Ethiopians
         </a>
+         -
+         
+        <button>
+          Ban
+        </button>
       </li>
       <li>
         <a
@@ -111,6 +181,11 @@ exports[`Index should render successfully 1`] = `
         >
           Franks
         </a>
+         -
+         
+        <button>
+          Ban
+        </button>
       </li>
       <li>
         <a
@@ -118,6 +193,11 @@ exports[`Index should render successfully 1`] = `
         >
           Goths
         </a>
+         -
+         
+        <button>
+          Ban
+        </button>
       </li>
       <li>
         <a
@@ -125,6 +205,11 @@ exports[`Index should render successfully 1`] = `
         >
           Gurjaras
         </a>
+         -
+         
+        <button>
+          Ban
+        </button>
       </li>
       <li>
         <a
@@ -132,6 +217,11 @@ exports[`Index should render successfully 1`] = `
         >
           Hindustanis
         </a>
+         -
+         
+        <button>
+          Ban
+        </button>
       </li>
       <li>
         <a
@@ -139,6 +229,11 @@ exports[`Index should render successfully 1`] = `
         >
           Huns
         </a>
+         -
+         
+        <button>
+          Ban
+        </button>
       </li>
       <li>
         <a
@@ -146,6 +241,11 @@ exports[`Index should render successfully 1`] = `
         >
           Incas
         </a>
+         -
+         
+        <button>
+          Ban
+        </button>
       </li>
       <li>
         <a
@@ -153,6 +253,11 @@ exports[`Index should render successfully 1`] = `
         >
           Italians
         </a>
+         -
+         
+        <button>
+          Ban
+        </button>
       </li>
       <li>
         <a
@@ -160,6 +265,11 @@ exports[`Index should render successfully 1`] = `
         >
           Japanese
         </a>
+         -
+         
+        <button>
+          Ban
+        </button>
       </li>
       <li>
         <a
@@ -167,6 +277,11 @@ exports[`Index should render successfully 1`] = `
         >
           Khmer
         </a>
+         -
+         
+        <button>
+          Ban
+        </button>
       </li>
       <li>
         <a
@@ -174,6 +289,11 @@ exports[`Index should render successfully 1`] = `
         >
           Koreans
         </a>
+         -
+         
+        <button>
+          Ban
+        </button>
       </li>
       <li>
         <a
@@ -181,6 +301,11 @@ exports[`Index should render successfully 1`] = `
         >
           Lithuanians
         </a>
+         -
+         
+        <button>
+          Ban
+        </button>
       </li>
       <li>
         <a
@@ -188,6 +313,11 @@ exports[`Index should render successfully 1`] = `
         >
           Magyars
         </a>
+         -
+         
+        <button>
+          Ban
+        </button>
       </li>
       <li>
         <a
@@ -195,6 +325,11 @@ exports[`Index should render successfully 1`] = `
         >
           Malay
         </a>
+         -
+         
+        <button>
+          Ban
+        </button>
       </li>
       <li>
         <a
@@ -202,6 +337,11 @@ exports[`Index should render successfully 1`] = `
         >
           Malians
         </a>
+         -
+         
+        <button>
+          Ban
+        </button>
       </li>
       <li>
         <a
@@ -209,6 +349,11 @@ exports[`Index should render successfully 1`] = `
         >
           Mayans
         </a>
+         -
+         
+        <button>
+          Ban
+        </button>
       </li>
       <li>
         <a
@@ -216,6 +361,11 @@ exports[`Index should render successfully 1`] = `
         >
           Mongols
         </a>
+         -
+         
+        <button>
+          Ban
+        </button>
       </li>
       <li>
         <a
@@ -223,6 +373,11 @@ exports[`Index should render successfully 1`] = `
         >
           Persians
         </a>
+         -
+         
+        <button>
+          Ban
+        </button>
       </li>
       <li>
         <a
@@ -230,6 +385,11 @@ exports[`Index should render successfully 1`] = `
         >
           Poles
         </a>
+         -
+         
+        <button>
+          Ban
+        </button>
       </li>
       <li>
         <a
@@ -237,6 +397,11 @@ exports[`Index should render successfully 1`] = `
         >
           Portugese
         </a>
+         -
+         
+        <button>
+          Ban
+        </button>
       </li>
       <li>
         <a
@@ -244,6 +409,11 @@ exports[`Index should render successfully 1`] = `
         >
           Saracens
         </a>
+         -
+         
+        <button>
+          Ban
+        </button>
       </li>
       <li>
         <a
@@ -251,6 +421,11 @@ exports[`Index should render successfully 1`] = `
         >
           Sicilians
         </a>
+         -
+         
+        <button>
+          Ban
+        </button>
       </li>
       <li>
         <a
@@ -258,6 +433,11 @@ exports[`Index should render successfully 1`] = `
         >
           Slavs
         </a>
+         -
+         
+        <button>
+          Ban
+        </button>
       </li>
       <li>
         <a
@@ -265,6 +445,11 @@ exports[`Index should render successfully 1`] = `
         >
           Spanish
         </a>
+         -
+         
+        <button>
+          Ban
+        </button>
       </li>
       <li>
         <a
@@ -272,6 +457,11 @@ exports[`Index should render successfully 1`] = `
         >
           Tatars
         </a>
+         -
+         
+        <button>
+          Ban
+        </button>
       </li>
       <li>
         <a
@@ -279,6 +469,11 @@ exports[`Index should render successfully 1`] = `
         >
           Teutons
         </a>
+         -
+         
+        <button>
+          Ban
+        </button>
       </li>
       <li>
         <a
@@ -286,6 +481,11 @@ exports[`Index should render successfully 1`] = `
         >
           Turks
         </a>
+         -
+         
+        <button>
+          Ban
+        </button>
       </li>
       <li>
         <a
@@ -293,6 +493,11 @@ exports[`Index should render successfully 1`] = `
         >
           Vietnamese
         </a>
+         -
+         
+        <button>
+          Ban
+        </button>
       </li>
       <li>
         <a
@@ -300,6 +505,11 @@ exports[`Index should render successfully 1`] = `
         >
           Vikings
         </a>
+         -
+         
+        <button>
+          Ban
+        </button>
       </li>
     </ul>
   </div>

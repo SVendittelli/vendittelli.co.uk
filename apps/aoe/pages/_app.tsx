@@ -1,17 +1,20 @@
 import { AppProps } from 'next/app';
 import Head from 'next/head';
+import { Provider } from 'react-redux';
+import { wrapper } from '../store/store';
 import './styles.scss';
 
-function CustomApp({ Component, pageProps }: AppProps) {
+function CustomApp({ Component, ...rest }: AppProps) {
+  const { store, props } = wrapper.useWrappedStore(rest);
   return (
-    <>
+    <Provider store={store}>
       <Head>
-        <title>Welcome to AoE!</title>
+        <title>AoE II: DE Random Civ Picker</title>
       </Head>
       <main className="app">
-        <Component {...pageProps} />
+        <Component {...props.pageProps} />
       </main>
-    </>
+    </Provider>
   );
 }
 

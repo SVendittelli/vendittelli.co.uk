@@ -1,19 +1,10 @@
-import Link from 'next/link';
-import { civilisationList, civilisations } from '../data/civilisations';
+import CivilisationList from '../components/CivilisationList';
 
 export function Index() {
   return (
     <>
-      <h1>AoE</h1>
-      <ul>
-        {civilisationList.map((civilisation) => (
-          <li key={civilisation}>
-            <Link href={`/civ/${encodeURIComponent(civilisation)}`}>
-              {civilisations[civilisation].name}
-            </Link>
-          </li>
-        ))}
-      </ul>
+      <h1>AoE II: DE Random Civilisation Picker</h1>
+      <CivilisationList />
     </>
   );
 }

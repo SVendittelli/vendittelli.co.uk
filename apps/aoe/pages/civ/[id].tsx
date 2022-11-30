@@ -1,31 +1,41 @@
 import { GetStaticPaths, GetStaticProps } from 'next';
-import { civilisationList, civilisations } from '../../data/civilisations';
-import { CivilisationDetails } from '../../types/civilisations';
-
-type CivilisationProps = {
-  details: CivilisationDetails;
-};
+import Link from 'next/link';
+import { useRouter } from 'next/router';
+import { useSelector } from 'react-redux';
+import BanButton from '../../components/BanButton';
+import { civilisations } from '../../data/civilisations';
+import { selectCivilisationById } from '../../store/civilisations.slice';
+import { AppState, wrapper } from '../../store/store';
 
 export const getStaticPaths: GetStaticPaths = () => {
   return {
-    paths: civilisationList.map((civilisation) => ({
-      params: { id: civilisation },
+    paths: civilisations.map(({ id }) => ({
+      params: { id },
     })),
     fallback: false, // can also be true or 'blocking'
   };
 };
 
-export const getStaticProps: GetStaticProps = (context) => {
-  return {
-    props: { details: civilisations[context.params.id as string] },
-  };
-};
+export const getStaticProps: GetStaticProps = wrapper.getStaticProps(
+  (_store) => () => ({
+    props: {},
+  })
+);
 
-const Civilisation = ({ details }: CivilisationProps) => {
+const Civilisation = () => {
+  const router = useRouter();
+  const { id } = router.query;
+
+  const { name, ...rest } = useSelector((state: AppState) =>
+    selectCivilisationById(state, id as string)
+  );
+
   return (
     <>
-      <h1>Civilisation: {details.name}</h1>
-      <p>{JSON.stringify(details)}</p>
+      <Link href="/">Home</Link>
+      <h1>Civilisation: {name}</h1>
+      <p>{JSON.stringify(rest)}</p>
+      <BanButton id={id as string} />
     </>
   );
 };

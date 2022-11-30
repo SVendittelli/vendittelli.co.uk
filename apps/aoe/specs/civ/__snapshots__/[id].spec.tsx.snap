@@ -3,13 +3,21 @@
 exports[`Civilisation should render successfully 1`] = `
 <body>
   <div>
+    <a
+      href="/"
+    >
+      Home
+    </a>
     <h1>
       Civilisation: 
-      name
+      Aztecs
     </h1>
     <p>
-      {"id":"id","name":"name"}
+      {"id":"aztecs"}
     </p>
+    <button>
+      Ban
+    </button>
   </div>
 </body>
 `;
