@@ -38,6 +38,9 @@ testem.log
 .DS_Store
 Thumbs.db
 
+# Next.js
+.next
+
 # Created by https://www.toptal.com/developers/gitignore/api/terraform
 # Edit at https://www.toptal.com/developers/gitignore?templates=terraform
 

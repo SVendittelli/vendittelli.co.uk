@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Index should render successfully 1`] = `
+<body>
+  <div>
+    <h1>
+      AoE
+    </h1>
+  </div>
+</body>
+`;
