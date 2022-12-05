@@ -15,6 +15,11 @@
       "matchPackagePatterns": ["*"],
       "excludePackagePatterns": ["github-pages"],
       "enabled": false
+    },
+    {
+      "description": "Group all terraform dependencies together",
+      "matchManagers": ["terraform"],
+      "groupName": "terraform"
     }
   ]
 }
