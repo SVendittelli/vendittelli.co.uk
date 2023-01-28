@@ -26,12 +26,16 @@ jobs:
 
       - name: Setup TFLint
         uses: terraform-linters/setup-tflint@v3
+        with:
+          github_token: ${{ secrets.TFLINT_GITHUB_TOKEN }}
 
       - name: Show version
         run: tflint --version
 
       - name: Init TFLint
         run: tflint --init
+        env:
+          GITHUB_TOKEN: ${{ secrets.TFLINT_GITHUB_TOKEN }}
 
       - name: Run TFLint
         run: tflint -f compact
