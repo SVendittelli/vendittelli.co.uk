@@ -2,43 +2,43 @@
 # Manual edits may be lost in future updates.
 
 provider "registry.terraform.io/cloudflare/cloudflare" {
-  version     = "3.33.1"
-  constraints = "3.33.1"
+  version     = "3.34.0"
+  constraints = "3.34.0"
   hashes = [
-    "h1:6ozZ65z1fJnAuvwkhei9NTpX1ZMQg+BDE+uy0A9fGnc=",
-    "h1:Ij+CjZhOie1N6LtuTdSi0x7AYlPCFEOFpdI6hey9das=",
-    "h1:JLVcmmXdugqHM9Vr9pcUrpJKbLCRkyY52/wZbAEZ1oQ=",
-    "h1:OtXKlQihXMdQfUcAq5OLU84MeyS32r4LC9N34yVelwE=",
-    "h1:TAUI8mvrPovhCEpyU/cISQUI3Nu6unAlvs/MBlgOVCY=",
-    "h1:Uy3Ya1kkIoOLQ2jiMR9aZ4dqfgZ2M59ubgVV6/HxQfg=",
-    "h1:fmfXz46jcHoGPi3BmmQEJZJ0c/Q8xESPwJtmmjnAyr8=",
-    "h1:jrROxiiRfY1w7SKbKkJLD5dBztzCmBpsebyobrSZJls=",
-    "h1:kganARCtl0nFXWExZ3QF6x6C7PU6TEsjj7VkDnE6ge8=",
-    "h1:mKXqAeZBO1q3WaXOC/+h6Ftoair/qzXYwnbu3MzZ1/k=",
-    "h1:nVSefQ2g6GN5Xb9nCkpUHZGqEGhV/Uz4KtdAkI/IDUI=",
-    "h1:w/5Hy93el6X4XcolnN0JARzBoPA3QQmEHxuDyAu+/AU=",
-    "h1:yBKi4+DTMdCp2HGCi6FEfF7agKRTuc3mogPBRHVQsxY=",
-    "h1:yL+jBzX+P/VabdTwZ1V1+UjI1EH+S1UQtm3U+rZ4XtU=",
+    "h1:2+eA+j+gXn0B/l0kapAFOOQPh7Vh4g774rBVayGUfI8=",
+    "h1:4jOI2ZUyp/EvIVE9rNvCMTqrIaG7j7XxUD1i43xD0Jg=",
+    "h1:4x4Qa8irwA6mFMYBR+GlHjmngDlM8+jI7GFtccVcS1U=",
+    "h1:AB9sT9gJP239BsgdUxIYdAabWY2K9G4zkQKn83EpQ8o=",
+    "h1:FVdU3vjh0OmQXd+KHHG0AhoF1EVmre6ndicihazZRZA=",
+    "h1:KC5EBHbYiEQPUkEl6k1ck7EXSdIh00MuK+pndyN/m8o=",
+    "h1:QeO+g4E47Y0QEQdaNdRkHlhW3DDZvK7r0WXBMH3uRbA=",
+    "h1:SeGtCBU8FvnDHpCZj6xyFYcQAnFw7A+meTGouHbdrvo=",
+    "h1:VGcIJ5FlUOBEwYp7BeSke6kmIX+OjI34YzDXAKdvyjk=",
+    "h1:X/wYV+/KuCpuKOwiYIbF+M/Z8aJNYtci9yjRpTHikk8=",
+    "h1:bu0myWbZV1lWigzq5wEHC0esSmZQYhFwk6D+nePzgp0=",
+    "h1:sMI4F6M87OXQAfUrvoLVSifRrVosRclUj1ndJC4b9Wk=",
+    "h1:u6BwlEWpLct0U966W1wyELfr+yBs0jRiQcyF3cHz9wI=",
+    "h1:wbFn5oceME/Gw9Y6o2hRYrxb9AAj6zzbkI//KkmUp8M=",
   ]
 }
 
 provider "registry.terraform.io/hashicorp/aws" {
-  version     = "4.52.0"
-  constraints = "4.52.0"
+  version     = "4.54.0"
+  constraints = "4.54.0"
   hashes = [
-    "h1:5jyRee5bTD77EwiNdoBACpUYBgdTYkdl+Dl1h1yA2cg=",
-    "h1:Evj5RAvII3jHsswyquNSE/TkQPKaQDq5owc3jVyUs14=",
-    "h1:FjRLescwfYd2TUFDxasyhCaD5MtXSfPC/D6RLeYGO6o=",
-    "h1:IAXqURSObP11HALJb4TQReVfOA8h19aHoL6qbSYBAQg=",
-    "h1:IDjVV+/FkW9WvpbVh0t0Chf2MPHc2OznyTnMxe/VynM=",
-    "h1:Ofm8syFCBU8MFOiU+zg+vnTWkSdozpmvaA9xukNvcBg=",
-    "h1:SL3rwPmLmUVKVuWzFwvwF340lPD/m8/ms1ZzYC17RHs=",
-    "h1:XVFYieTSH9PCpOiFWnNzjNYXTrgSb2ZpLh49/jMe9Jk=",
-    "h1:Ye+MfFMvkOgSMdj1oYpeEg/RbsQMy1T5vNTUmMh7Gz8=",
-    "h1:h99a9DPVbdDECj0Cv4YDCR1Je9BtJZ3phcxqd4tWjJ8=",
-    "h1:jyDbvIYNQWyiJjbUnwKYK/Xluq8Vjp4d1RCvzrmLMPY=",
-    "h1:l1LZWGWMuHxDE7SUePeo7WPfHnrki+jgzYoh547OW0I=",
-    "h1:pTH20eNlkwO3vxYb3f/Dm9QXjhVeidpvrn5YcvydM7Y=",
-    "h1:vmp+9Y9TmXRIOime3pSfQCirRN6tW8cB18KlI+6uUk8=",
+    "h1:5kHs3DzABjYybNL+rkl7oiRAPup1SnhFd0TC83qcDZ8=",
+    "h1:8F5YQIE6YgG9+THTQv/m9utVEch0GwI4+vi0bmKKmpA=",
+    "h1:BGib+JVRkTJBZcgSySan5645HD+OVRedZNgXozN7OPI=",
+    "h1:CvZ2TNI0ImPJN1xxCCZsrU5mEQXcyfPcEWM7u7tMfPs=",
+    "h1:DIFLuKBXhHyocPD33cgVeg1JrkB/WT0WLX0v+L8BD5U=",
+    "h1:HseI01em8j2/fhiydrCgsOHOjSfllDETLAmISXWCC4I=",
+    "h1:VyzlgzOAYcwGzrpWGoKmJUhOAnYj54edFu82uv4budw=",
+    "h1:ZruBKATjoiQ2Ee2j1zoDIKuTb1gz9SQXReWpzEi3md4=",
+    "h1:eiPVhVhAawhvnZIwtRRM4y7UpfWSJpYXFHwml1M2LB0=",
+    "h1:gr0Xlk9orKv2lMVbyGpiPHdBpyQzTblOqto3JF517DQ=",
+    "h1:j/L01+hlHVM2X2VrkQC2WtMZyu4ZLhDMw+HDJ7k0Y2Q=",
+    "h1:k4XBt5tpRagyiMgU8UjjbwfockiTIqQBnVohS1AmjAk=",
+    "h1:kprzRGcLNMqsf4643+PfmXiw5ax5tTqtqudBaR3LJzU=",
+    "h1:tQZshYGaphFASlCJMo+vWin4arIlvwOkE4IiIwxO5vQ=",
   ]
 }
