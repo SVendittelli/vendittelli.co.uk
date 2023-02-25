@@ -39,7 +39,7 @@
     "@nrwl/web": "15.2.4",
     "@nrwl/workspace": "15.2.4",
     "@prettier/plugin-xml": "2.2.0",
-    "@testing-library/react": "13.4.0",
+    "@testing-library/react": "14.0.0",
     "@types/jest": "29.4.0",
     "@types/node": "18.14.1",
     "@types/react": "18.0.28",
