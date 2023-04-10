@@ -58,7 +58,7 @@
       "defaultConfiguration": "development",
       "options": {
         "buildTarget": "home:build",
-        "hmr": true
+        "hmr": false
       },
       "configurations": {
         "development": {
