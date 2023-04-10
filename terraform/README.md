@@ -9,14 +9,14 @@ The infrastructure for my personal website: [vendittelli.co.uk](https://venditte
 |------|---------|
 | terraform | 1.4.4 |
 | aws | 4.62.0 |
-| cloudflare | 3.35.0 |
+| cloudflare | 4.3.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
 | aws | 4.62.0 |
-| cloudflare | 3.35.0 |
+| cloudflare | 4.3.0 |
 
 ## Resources
 
@@ -30,15 +30,15 @@ The infrastructure for my personal website: [vendittelli.co.uk](https://venditte
 | [aws_s3_bucket_public_access_block.www](https://registry.terraform.io/providers/hashicorp/aws/4.62.0/docs/resources/s3_bucket_public_access_block) | resource |
 | [aws_s3_bucket_website_configuration.site](https://registry.terraform.io/providers/hashicorp/aws/4.62.0/docs/resources/s3_bucket_website_configuration) | resource |
 | [aws_s3_bucket_website_configuration.www](https://registry.terraform.io/providers/hashicorp/aws/4.62.0/docs/resources/s3_bucket_website_configuration) | resource |
-| [cloudflare_managed_headers.managed_headers](https://registry.terraform.io/providers/cloudflare/cloudflare/3.35.0/docs/resources/managed_headers) | resource |
-| [cloudflare_record.dmarc](https://registry.terraform.io/providers/cloudflare/cloudflare/3.35.0/docs/resources/record) | resource |
-| [cloudflare_record.docs](https://registry.terraform.io/providers/cloudflare/cloudflare/3.35.0/docs/resources/record) | resource |
-| [cloudflare_record.domainkey](https://registry.terraform.io/providers/cloudflare/cloudflare/3.35.0/docs/resources/record) | resource |
-| [cloudflare_record.site_cname](https://registry.terraform.io/providers/cloudflare/cloudflare/3.35.0/docs/resources/record) | resource |
-| [cloudflare_record.spf1](https://registry.terraform.io/providers/cloudflare/cloudflare/3.35.0/docs/resources/record) | resource |
-| [cloudflare_record.www](https://registry.terraform.io/providers/cloudflare/cloudflare/3.35.0/docs/resources/record) | resource |
-| [cloudflare_zone_settings_override.security](https://registry.terraform.io/providers/cloudflare/cloudflare/3.35.0/docs/resources/zone_settings_override) | resource |
-| [cloudflare_zones.domain](https://registry.terraform.io/providers/cloudflare/cloudflare/3.35.0/docs/data-sources/zones) | data source |
+| [cloudflare_managed_headers.managed_headers](https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/managed_headers) | resource |
+| [cloudflare_record.dmarc](https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/record) | resource |
+| [cloudflare_record.docs](https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/record) | resource |
+| [cloudflare_record.domainkey](https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/record) | resource |
+| [cloudflare_record.site_cname](https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/record) | resource |
+| [cloudflare_record.spf1](https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/record) | resource |
+| [cloudflare_record.www](https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/record) | resource |
+| [cloudflare_zone_settings_override.security](https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/zone_settings_override) | resource |
+| [cloudflare_zones.domain](https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/data-sources/zones) | data source |
 
 ## Inputs
 
