@@ -25,9 +25,9 @@
     "tslib": "2.5.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "17.4.4",
+    "@commitlint/cli": "17.5.1",
     "@commitlint/config-conventional": "17.4.4",
-    "@commitlint/cz-commitlint": "17.4.4",
+    "@commitlint/cz-commitlint": "17.5.0",
     "@nrwl/cli": "15.9.2",
     "@nrwl/cypress": "15.9.2",
     "@nrwl/eslint-plugin-nx": "15.9.2",
