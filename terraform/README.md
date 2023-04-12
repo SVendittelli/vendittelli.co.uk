@@ -7,7 +7,7 @@ The infrastructure for my personal website: [vendittelli.co.uk](https://venditte
 
 | Name | Version |
 |------|---------|
-| terraform | 1.4.4 |
+| terraform | 1.4.5 |
 | aws | 4.62.0 |
 | cloudflare | 4.3.0 |
 
