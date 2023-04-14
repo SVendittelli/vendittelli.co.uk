@@ -16,14 +16,14 @@ terraform {
       source  = "cloudflare/cloudflare"
       version = "4.3.0"
     }
-    # helm = {
-    #   source  = "hashicorp/helm"
-    #   version = "2.9.0"
-    # }
-    # kubernetes = {
-    #   source  = "hashicorp/kubernetes"
-    #   version = "2.19.0"
-    # }
+    helm = {
+      source  = "hashicorp/helm"
+      version = "2.9.0"
+    }
+    kubernetes = {
+      source  = "hashicorp/kubernetes"
+      version = "2.19.0"
+    }
     linode = {
       source  = "linode/linode"
       version = "1.30.0"
