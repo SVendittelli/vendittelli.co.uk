@@ -12,3 +12,8 @@ resource "linode_lke_cluster" "k8s" {
     }
   }
 }
+
+resource "local_sensitive_file" "kubeconfig" {
+  content_base64 = linode_lke_cluster.k8s.kubeconfig
+  filename       = "${path.module}/kube-config"
+}
