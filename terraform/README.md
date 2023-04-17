@@ -10,10 +10,7 @@ The infrastructure for my personal website: [vendittelli.co.uk](https://venditte
 | terraform | 1.4.5 |
 | aws | 4.62.0 |
 | cloudflare | 4.3.0 |
-| helm | 2.9.0 |
-| kubernetes | 2.19.0 |
 | linode | 1.30.0 |
-| local | 2.4.0 |
 
 ## Providers
 
@@ -21,10 +18,7 @@ The infrastructure for my personal website: [vendittelli.co.uk](https://venditte
 |------|---------|
 | aws | 4.62.0 |
 | cloudflare | 4.3.0 |
-| helm | 2.9.0 |
-| kubernetes | 2.19.0 |
 | linode | 1.30.0 |
-| local | 2.4.0 |
 
 ## Resources
 
@@ -46,10 +40,7 @@ The infrastructure for my personal website: [vendittelli.co.uk](https://venditte
 | [cloudflare_record.spf1](https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/record) | resource |
 | [cloudflare_record.www](https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/record) | resource |
 | [cloudflare_zone_settings_override.security](https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/zone_settings_override) | resource |
-| [helm_release.argocd](https://registry.terraform.io/providers/hashicorp/helm/2.9.0/docs/resources/release) | resource |
-| [kubernetes_namespace.argocd](https://registry.terraform.io/providers/hashicorp/kubernetes/2.19.0/docs/resources/namespace) | resource |
 | [linode_lke_cluster.k8s](https://registry.terraform.io/providers/linode/linode/1.30.0/docs/resources/lke_cluster) | resource |
-| [local_sensitive_file.kubeconfig](https://registry.terraform.io/providers/hashicorp/local/2.4.0/docs/resources/sensitive_file) | resource |
 | [cloudflare_zones.domain](https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/data-sources/zones) | data source |
 
 ## Inputs
@@ -69,8 +60,5 @@ The infrastructure for my personal website: [vendittelli.co.uk](https://venditte
 | Name | Description |
 |------|-------------|
 | api\_endpoints | k8s cluster API endpoints |
-| bucket\_endpoint | Bucket endpoint |
-| domain\_name | Website endpoint |
-| kubeconfig | Kubeconfig for access k8s cluster |
-| website\_bucket\_name | Name (id) of the bucket |
+| kubeconfig | Kubeconfig for accessing the k8s cluster (base64 encoded) |
 <!-- END_TF_DOCS -->
