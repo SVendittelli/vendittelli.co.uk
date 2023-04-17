@@ -16,6 +16,10 @@ terraform {
       source  = "cloudflare/cloudflare"
       version = "4.3.0"
     }
+    linode = {
+      source  = "linode/linode"
+      version = "1.30.0"
+    }
   }
 }
 
@@ -24,3 +28,7 @@ provider "aws" {
 }
 
 provider "cloudflare" {}
+
+provider "linode" {
+  token = var.linode_token
+}
