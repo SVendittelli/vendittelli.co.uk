@@ -1,13 +1,6 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
-    "config:base",
-    ":pinAllExceptPeerDependencies",
-    ":automergeMinor",
-    ":semanticCommitTypeAll(chore)"
-  ],
-  "labels": ["dependencies"],
-  "dependencyDashboardLabels": ["dependencies"],
+  "extends": ["github>SVendittelli/renovate-config"],
   "packageRules": [
     {
       "description": "Only update github-pages gem",
