@@ -47,13 +47,13 @@ The infrastructure for my personal website: [vendittelli.co.uk](https://venditte
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| aws\_region | The AWS region to put the bucket into | `string` | `"eu-west-2"` | no |
-| github\_user | The GitHub username that owns the GitHub repo | `string` | n/a | yes |
-| k8s\_version | The Kubernetes version to use for this cluster. (required) | `string` | `"1.25"` | no |
-| linode\_region | The region where your cluster will be located. (required) | `string` | `"eu-west"` | no |
-| linode\_token | Your Linode API Personal Access Token. (required) | `string` | n/a | yes |
-| pools | The Node Pool specifications for the Kubernetes cluster. (required) | ```list(object({ type = string count = number }))``` | ```[ { "count": 1, "type": "g6-standard-1" } ]``` | no |
-| site\_domain | The domain name to use for the static site | `string` | n/a | yes |
+| aws\_region | The AWS region to put the S3 bucket into. | `string` | `"eu-west-2"` | no |
+| github\_user | The GitHub username that owns the GitHub repo. | `string` | `"svendittelli"` | no |
+| k8s\_version | The Kubernetes version to use for the cluster. | `string` | `"1.25"` | no |
+| linode\_region | The region where the kubernetes cluster will be located. | `string` | `"eu-west"` | no |
+| linode\_token | The Linode API Personal Access Token. | `string` | n/a | yes |
+| pools | The Node Pool specifications for the kubernetes cluster. | ```list(object({ type = string count = number }))``` | ```[ { "count": 2, "type": "g6-standard-1" } ]``` | no |
+| site\_domain | The domain name to use for the static site. | `string` | `"vendittelli.co.uk"` | no |
 
 ## Outputs
 
