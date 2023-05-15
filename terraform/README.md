@@ -10,7 +10,7 @@ The infrastructure for my personal website: [vendittelli.co.uk](https://venditte
 | terraform | 1.4.6 |
 | aws | 4.66.1 |
 | cloudflare | 4.5.0 |
-| linode | 1.30.0 |
+| linode | 2.1.1 |
 
 ## Providers
 
@@ -18,7 +18,7 @@ The infrastructure for my personal website: [vendittelli.co.uk](https://venditte
 |------|---------|
 | aws | 4.66.1 |
 | cloudflare | 4.5.0 |
-| linode | 1.30.0 |
+| linode | 2.1.1 |
 
 ## Resources
 
@@ -40,7 +40,7 @@ The infrastructure for my personal website: [vendittelli.co.uk](https://venditte
 | [cloudflare_record.spf1](https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/record) | resource |
 | [cloudflare_record.www](https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/record) | resource |
 | [cloudflare_zone_settings_override.security](https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/zone_settings_override) | resource |
-| [linode_lke_cluster.k8s](https://registry.terraform.io/providers/linode/linode/1.30.0/docs/resources/lke_cluster) | resource |
+| [linode_lke_cluster.k8s](https://registry.terraform.io/providers/linode/linode/2.1.1/docs/resources/lke_cluster) | resource |
 | [cloudflare_zones.domain](https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/data-sources/zones) | data source |
 
 ## Inputs
