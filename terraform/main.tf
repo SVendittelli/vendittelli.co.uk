@@ -18,7 +18,7 @@ terraform {
     }
     linode = {
       source  = "linode/linode"
-      version = "1.30.0"
+      version = "2.1.1"
     }
   }
 }
