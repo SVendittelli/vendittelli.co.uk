@@ -3,7 +3,7 @@
   "npmScope": "vendittelli",
   "tasksRunnerOptions": {
     "default": {
-      "runner": "@nrwl/nx-cloud",
+      "runner": "nx-cloud",
       "options": {
         "cacheableOperations": ["build", "lint", "test", "e2e", "prepare"],
         "accessToken": "YzgwMmQzN2ItMWVkYS00Y2FiLWEzOGYtYTRlNGYzMTFhNTFmfHJlYWQtd3JpdGU="
@@ -37,7 +37,7 @@
     "sharedGlobals": ["{workspaceRoot}/babel.config.json"]
   },
   "generators": {
-    "@nrwl/react": {
+    "@nx/react": {
       "application": {
         "style": "scss",
         "linter": "eslint",
