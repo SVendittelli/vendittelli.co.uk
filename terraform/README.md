@@ -7,41 +7,41 @@ The infrastructure for my personal website: [vendittelli.co.uk](https://venditte
 
 | Name | Version |
 |------|---------|
-| terraform | 1.4.6 |
-| aws | 4.66.1 |
-| cloudflare | 4.5.0 |
-| linode | 2.1.1 |
+| terraform | 1.5.0 |
+| aws | 4.67.0 |
+| cloudflare | 4.7.1 |
+| linode | 2.4.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| aws | 4.66.1 |
-| cloudflare | 4.5.0 |
-| linode | 2.1.1 |
+| aws | 4.67.0 |
+| cloudflare | 4.7.1 |
+| linode | 2.4.0 |
 
 ## Resources
 
 | Name | Type |
 |------|------|
-| [aws_s3_bucket.site](https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/s3_bucket) | resource |
-| [aws_s3_bucket.www](https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/s3_bucket) | resource |
-| [aws_s3_bucket_acl.site](https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/s3_bucket_acl) | resource |
-| [aws_s3_bucket_acl.www](https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/s3_bucket_acl) | resource |
-| [aws_s3_bucket_policy.site](https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/s3_bucket_policy) | resource |
-| [aws_s3_bucket_public_access_block.www](https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/s3_bucket_public_access_block) | resource |
-| [aws_s3_bucket_website_configuration.site](https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/s3_bucket_website_configuration) | resource |
-| [aws_s3_bucket_website_configuration.www](https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/s3_bucket_website_configuration) | resource |
-| [cloudflare_managed_headers.managed_headers](https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/managed_headers) | resource |
-| [cloudflare_record.dmarc](https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/record) | resource |
-| [cloudflare_record.docs](https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/record) | resource |
-| [cloudflare_record.domainkey](https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/record) | resource |
-| [cloudflare_record.site_cname](https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/record) | resource |
-| [cloudflare_record.spf1](https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/record) | resource |
-| [cloudflare_record.www](https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/record) | resource |
-| [cloudflare_zone_settings_override.security](https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/zone_settings_override) | resource |
-| [linode_lke_cluster.k8s](https://registry.terraform.io/providers/linode/linode/2.1.1/docs/resources/lke_cluster) | resource |
-| [cloudflare_zones.domain](https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/data-sources/zones) | data source |
+| [aws_s3_bucket.site](https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/s3_bucket) | resource |
+| [aws_s3_bucket.www](https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/s3_bucket) | resource |
+| [aws_s3_bucket_acl.site](https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/s3_bucket_acl) | resource |
+| [aws_s3_bucket_acl.www](https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/s3_bucket_acl) | resource |
+| [aws_s3_bucket_policy.site](https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/s3_bucket_policy) | resource |
+| [aws_s3_bucket_public_access_block.www](https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/s3_bucket_public_access_block) | resource |
+| [aws_s3_bucket_website_configuration.site](https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/s3_bucket_website_configuration) | resource |
+| [aws_s3_bucket_website_configuration.www](https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/s3_bucket_website_configuration) | resource |
+| [cloudflare_managed_headers.managed_headers](https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/managed_headers) | resource |
+| [cloudflare_record.dmarc](https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/record) | resource |
+| [cloudflare_record.docs](https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/record) | resource |
+| [cloudflare_record.domainkey](https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/record) | resource |
+| [cloudflare_record.site_cname](https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/record) | resource |
+| [cloudflare_record.spf1](https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/record) | resource |
+| [cloudflare_record.www](https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/record) | resource |
+| [cloudflare_zone_settings_override.security](https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/zone_settings_override) | resource |
+| [linode_lke_cluster.k8s](https://registry.terraform.io/providers/linode/linode/2.4.0/docs/resources/lke_cluster) | resource |
+| [cloudflare_zones.domain](https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/data-sources/zones) | data source |
 
 ## Inputs
 
