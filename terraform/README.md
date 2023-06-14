@@ -8,7 +8,7 @@ The infrastructure for my personal website: [vendittelli.co.uk](https://venditte
 | Name | Version |
 |------|---------|
 | terraform | 1.5.0 |
-| aws | 4.67.0 |
+| aws | 5.3.0 |
 | cloudflare | 4.7.1 |
 | linode | 2.4.0 |
 
@@ -16,7 +16,7 @@ The infrastructure for my personal website: [vendittelli.co.uk](https://venditte
 
 | Name | Version |
 |------|---------|
-| aws | 4.67.0 |
+| aws | 5.3.0 |
 | cloudflare | 4.7.1 |
 | linode | 2.4.0 |
 
@@ -24,14 +24,14 @@ The infrastructure for my personal website: [vendittelli.co.uk](https://venditte
 
 | Name | Type |
 |------|------|
-| [aws_s3_bucket.site](https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/s3_bucket) | resource |
-| [aws_s3_bucket.www](https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/s3_bucket) | resource |
-| [aws_s3_bucket_acl.site](https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/s3_bucket_acl) | resource |
-| [aws_s3_bucket_acl.www](https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/s3_bucket_acl) | resource |
-| [aws_s3_bucket_policy.site](https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/s3_bucket_policy) | resource |
-| [aws_s3_bucket_public_access_block.www](https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/s3_bucket_public_access_block) | resource |
-| [aws_s3_bucket_website_configuration.site](https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/s3_bucket_website_configuration) | resource |
-| [aws_s3_bucket_website_configuration.www](https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/s3_bucket_website_configuration) | resource |
+| [aws_s3_bucket.site](https://registry.terraform.io/providers/hashicorp/aws/5.3.0/docs/resources/s3_bucket) | resource |
+| [aws_s3_bucket.www](https://registry.terraform.io/providers/hashicorp/aws/5.3.0/docs/resources/s3_bucket) | resource |
+| [aws_s3_bucket_acl.site](https://registry.terraform.io/providers/hashicorp/aws/5.3.0/docs/resources/s3_bucket_acl) | resource |
+| [aws_s3_bucket_acl.www](https://registry.terraform.io/providers/hashicorp/aws/5.3.0/docs/resources/s3_bucket_acl) | resource |
+| [aws_s3_bucket_policy.site](https://registry.terraform.io/providers/hashicorp/aws/5.3.0/docs/resources/s3_bucket_policy) | resource |
+| [aws_s3_bucket_public_access_block.www](https://registry.terraform.io/providers/hashicorp/aws/5.3.0/docs/resources/s3_bucket_public_access_block) | resource |
+| [aws_s3_bucket_website_configuration.site](https://registry.terraform.io/providers/hashicorp/aws/5.3.0/docs/resources/s3_bucket_website_configuration) | resource |
+| [aws_s3_bucket_website_configuration.www](https://registry.terraform.io/providers/hashicorp/aws/5.3.0/docs/resources/s3_bucket_website_configuration) | resource |
 | [cloudflare_managed_headers.managed_headers](https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/managed_headers) | resource |
 | [cloudflare_record.dmarc](https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/record) | resource |
 | [cloudflare_record.docs](https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/record) | resource |
