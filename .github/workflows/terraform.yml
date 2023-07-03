@@ -18,7 +18,7 @@ jobs:
       - name: Checkout source code
         uses: actions/checkout@v3
         with:
-          ref: ${{ github.ref == 'refs/heads/main' && github.event_name != 'pull_request' && 'main' || github.event.pull_request.head.sha }}
+          ref: ${{ github.head_ref || github.ref_name }}
 
       - name: Cache plugin dir
         uses: actions/cache@v3
@@ -47,5 +47,5 @@ jobs:
         with:
           working-dir: terraform
           fail-on-diff: 'true'
-          git-push: ${{ github.ref == 'refs/heads/main' && github.event_name != 'pull_request' && 'false' || 'true' }}
+          git-push: ${{ github.ref_name == 'main' && github.event_name == 'push' && 'false' || 'true' }}
           git-commit-message: 'docs(terraform): update README'
