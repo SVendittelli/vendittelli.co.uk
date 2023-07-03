@@ -17,6 +17,8 @@ jobs:
     steps:
       - name: Checkout source code
         uses: actions/checkout@v3
+        with:
+          ref: ${{ endsWith(github.ref, 'main') && 'main' || github.event.pull_request.head.sha }}
 
       - name: Cache plugin dir
         uses: actions/cache@v3
@@ -40,8 +42,10 @@ jobs:
       - name: Run TFLint
         run: tflint -f compact
 
-      - name: Check terraform-docs
+      - name: Check/update terraform-docs
         uses: terraform-docs/gh-actions@v1
         with:
           working-dir: terraform
           fail-on-diff: 'true'
+          git-push: ${{ endsWith(github.ref, 'main') && 'false' || 'true' }}
+          git-commit-message: 'docs(terraform): update README'
