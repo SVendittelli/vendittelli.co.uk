@@ -26,9 +26,9 @@
   },
   "devDependencies": {
     "@babel/preset-react": "7.22.5",
-    "@commitlint/cli": "17.6.6",
-    "@commitlint/config-conventional": "17.6.6",
-    "@commitlint/cz-commitlint": "17.5.0",
+    "@commitlint/cli": "17.7.1",
+    "@commitlint/config-conventional": "17.7.0",
+    "@commitlint/cz-commitlint": "17.7.1",
     "@nx/cypress": "16.6.0",
     "@nx/eslint-plugin": "16.6.0",
     "@nx/jest": "16.6.0",
