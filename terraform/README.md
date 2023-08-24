@@ -24,10 +24,10 @@ The infrastructure for my personal website: [vendittelli.co.uk](https://venditte
 
 | Name | Type |
 |------|------|
+| [aws_s3_bucket.images](https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/s3_bucket) | resource |
 | [aws_s3_bucket.site](https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/s3_bucket) | resource |
 | [aws_s3_bucket.www](https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/s3_bucket) | resource |
-| [aws_s3_bucket_acl.site](https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/s3_bucket_acl) | resource |
-| [aws_s3_bucket_acl.www](https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/s3_bucket_acl) | resource |
+| [aws_s3_bucket_policy.images](https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/s3_bucket_policy) | resource |
 | [aws_s3_bucket_policy.site](https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/s3_bucket_policy) | resource |
 | [aws_s3_bucket_public_access_block.www](https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/s3_bucket_public_access_block) | resource |
 | [aws_s3_bucket_website_configuration.site](https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/s3_bucket_website_configuration) | resource |

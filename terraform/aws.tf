@@ -1,5 +1,6 @@
 resource "aws_s3_bucket" "site" {
   bucket = var.site_domain
+  acl = "public-read"
 
   tags = {
     Name = "Root site"
@@ -13,12 +14,6 @@ resource "aws_s3_bucket_website_configuration" "site" {
   index_document {
     suffix = "index.html"
   }
-}
-
-resource "aws_s3_bucket_acl" "site" {
-  bucket = aws_s3_bucket.site.id
-
-  acl = "public-read"
 }
 
 resource "aws_s3_bucket_policy" "site" {
@@ -43,17 +38,12 @@ resource "aws_s3_bucket_policy" "site" {
 
 resource "aws_s3_bucket" "www" {
   bucket = "www.${var.site_domain}"
+  acl = "private"
 
   tags = {
     Name = "www redirect"
     Env  = "prod"
   }
-}
-
-resource "aws_s3_bucket_acl" "www" {
-  bucket = aws_s3_bucket.www.id
-
-  acl = "private"
 }
 
 resource "aws_s3_bucket_website_configuration" "www" {
@@ -71,4 +61,34 @@ resource "aws_s3_bucket_public_access_block" "www" {
   block_public_policy     = true
   ignore_public_acls      = true
   restrict_public_buckets = true
+}
+
+resource "aws_s3_bucket" "images" {
+  bucket = "images"
+  acl = "public-read"
+
+  tags = {
+    Name = "Images"
+    Env  = "prod"
+  }
+}
+
+resource "aws_s3_bucket_policy" "images" {
+  bucket = aws_s3_bucket.images.id
+
+  policy = jsonencode({
+    Version = "2012-10-17"
+    Statement = [
+      {
+        Sid       = "PublicReadGetObject"
+        Effect    = "Allow"
+        Principal = "*"
+        Action    = "s3:GetObject"
+        Resource = [
+          aws_s3_bucket.images.arn,
+          "${aws_s3_bucket.images.arn}/*",
+        ]
+      },
+    ]
+  })
 }
