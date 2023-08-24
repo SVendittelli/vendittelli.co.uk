@@ -1,1 +1,8 @@
 @import '@csstools/normalize.css/opinionated.css';
+
+body {
+  height: 100vh;
+  overflow-x: hidden;
+
+  font-family: 'Rubik', sans-serif;
+}

@@ -6,7 +6,7 @@
 
     <meta
       http-equiv="Content-Security-Policy"
-      content="default-src 'none'; script-src 'self'; connect-src 'self'; img-src 'self'; style-src 'self'; base-uri 'self'; form-action 'self'"
+      content="default-src 'none'; script-src 'self'; connect-src 'self'; font-src fonts.gstatic.com; img-src *;style-src 'self' fonts.googleapis.com; base-uri 'self'; form-action 'self'"
     />
 
     <title>Sam Vendittelli | Full-stack Web Developer</title>
@@ -41,6 +41,13 @@
     />
 
     <link rel="author" href="humans.txt" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div id="root"></div>

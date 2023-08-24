@@ -1,7 +1,25 @@
-/*
- * Replace this with your own classes
- *
- * e.g.
- * .container {
- * }
-*/
+.container {
+  padding: 0 24px;
+  height: 64px;
+
+  display: flex;
+  align-items: center;
+
+  background-color: rgba(0, 0, 0, 0.8);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.8);
+
+  color: white;
+
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.title {
+  flex-grow: 1;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
