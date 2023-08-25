@@ -24,8 +24,6 @@ jobs:
         yarn nx affected --target=build --parallel=3
       artifacts-name: dist
       artifacts-path: dist
-      environment-variables: |
-        NX_EMAILJS_PUBLIC_KEY=${ vars.NX_EMAILJS_PUBLIC_KEY }
 
   agents:
     name: Nx Cloud - Agents
