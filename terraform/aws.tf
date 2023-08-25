@@ -74,7 +74,7 @@ resource "aws_s3_bucket_public_access_block" "www" {
 }
 
 resource "aws_s3_bucket" "images" {
-  bucket = "images"
+  bucket = "images.${var.site_domain}"
 
   tags = {
     Name = "Images"
