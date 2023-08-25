@@ -25,14 +25,14 @@ $offset: $short-diagonal + (4 * $margin-vertical) - 2px;
     calc($long-diagonal + 2 * $margin-horizontal)
   );
 
-  animation: background-pan 10s linear infinite;
+  animation: background-pan 20s linear infinite;
   background: linear-gradient(to right, $purple, $pink, $purple);
   background-size: 200%;
 
   position: fixed;
   top: 0;
   left: 0;
-  z-index: -1;
+  z-index: 0;
 
   width: 200vw;
   height: 100vh;
@@ -70,5 +70,10 @@ $offset: $short-diagonal + (4 * $margin-vertical) - 2px;
     clip-path: polygon(28% 0, 72% 0, 100% 50%, 72% 100%, 28% 100%, 0% 50%);
     margin-bottom: calc($margin-vertical - 0.5 * $short-diagonal);
     background-color: #000;
+    cursor: pointer;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.3);
+    }
   }
 }

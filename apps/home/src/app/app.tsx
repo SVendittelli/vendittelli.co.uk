@@ -1,16 +1,23 @@
 import { Header, Profile } from '@vendittelli/common-ui';
-import { Outlet } from 'react-router-dom';
+import classNames from 'classnames';
+import { Outlet, useMatch } from 'react-router-dom';
 import HexBackground from './hex-background/hex-background';
 
 import styles from './app.module.scss';
 
 export function App() {
+  const match = useMatch('/');
+
   return (
     <div className={styles['container']}>
       <HexBackground />
       <Header text="Sam Vendittelli" />
       <main>
-        <div className={styles['profile-section']}>
+        <div
+          className={classNames(styles['profile-section'], {
+            [styles['full-height']]: !!match,
+          })}
+        >
           <Profile></Profile>
         </div>
 

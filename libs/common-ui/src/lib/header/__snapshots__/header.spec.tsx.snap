@@ -6,9 +6,17 @@ exports[`Header should render successfully 1`] = `
     <header
       class="container"
     >
-      <h1>
+      <a
+        class="title"
+        href="/"
+      >
         Example
-      </h1>
+      </a>
+      <a
+        href="/about-me"
+      >
+        About Me
+      </a>
     </header>
   </div>
 </body>

@@ -30,7 +30,7 @@ export function Profile(props: ProfileProps) {
     <div className={styles['container']}>
       <img
         className={styles['profile-picture']}
-        src="https://placehold.co/100x100"
+        src="/assets/profile-photo.jpg"
         alt="Head shot"
         draggable={false}
       ></img>

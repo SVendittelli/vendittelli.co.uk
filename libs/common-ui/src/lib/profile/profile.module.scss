@@ -1,20 +1,26 @@
+@use 'sass:math';
+
 .container {
   color: white;
 
   padding: 24px;
 
-  background-color: rgba(0, 0, 0, 0.8);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.9);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
 
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  pointer-events: auto;
 }
 
 .profile-picture {
-  height: 100px;
-  width: 100px;
-  border-radius: 100px;
+  $image-height: 200px;
+  object-fit: cover;
+  height: $image-height;
+  width: calc(2 * $image-height / math.sqrt(3));
+  clip-path: polygon(28% 0, 72% 0, 100% 50%, 72% 100%, 28% 100%, 0% 50%);
 }
 
 .title {
