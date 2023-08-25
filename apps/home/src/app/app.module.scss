@@ -1,1 +1,25 @@
-/* Your styles goes here. */
+.container {
+  position: relative;
+}
+
+.profile-section {
+  display: flex;
+  min-height: 0;
+  align-items: center;
+  justify-content: center;
+  transition: min-height 1s;
+
+  &.full-height {
+    min-height: calc(100vh - 64px);
+  }
+}
+
+main,
+.profile-section {
+  position: relative;
+  pointer-events: none;
+}
+
+main :not(.profile-section) {
+  pointer-events: auto;
+}

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import styles from './header.module.scss';
 
 export interface HeaderProps {
@@ -7,7 +8,10 @@ export interface HeaderProps {
 export function Header(props: HeaderProps) {
   return (
     <header className={styles['container']}>
-      <h1>{props.text}</h1>
+      <Link className={styles['title']} to={'/'}>
+        {props.text}
+      </Link>
+      <Link to={'about-me'}>About Me</Link>
     </header>
   );
 }

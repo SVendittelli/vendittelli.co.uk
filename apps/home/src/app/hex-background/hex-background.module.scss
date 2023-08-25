@@ -1,0 +1,79 @@
+$purple: rgb(98, 0, 234);
+$pink: rgb(236, 64, 122);
+
+$long-diagonal: 100px;
+$short-diagonal: 0.866 * $long-diagonal;
+
+$margin-vertical: 2px;
+$margin-horizontal: (1.155 * $margin-vertical) + calc($long-diagonal / 4);
+
+$offset: $short-diagonal + (4 * $margin-vertical) - 2px;
+
+@keyframes background-pan {
+  from {
+    background-position: 0% center;
+  }
+  to {
+    background-position: -200% center;
+  }
+}
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    calc($long-diagonal + 2 * $margin-horizontal)
+  );
+
+  animation: background-pan 20s linear infinite;
+  background: linear-gradient(to right, $purple, $pink, $purple);
+  background-size: 200%;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0;
+
+  width: 200vw;
+  height: 100vh;
+}
+
+.container {
+  font-size: 0;
+  grid-column: 1/-1;
+
+  transform: translate(
+    calc(-1 * $long-diagonal / 2 - $margin-horizontal),
+    calc(-1 * $short-diagonal / 2 - $margin-vertical)
+  );
+
+  width: 200vw;
+  height: 100vh;
+
+  &::before {
+    content: '';
+    width: calc($long-diagonal / 2 + $margin-horizontal);
+    float: left;
+    height: 120%;
+    shape-outside: repeating-linear-gradient(
+      #0000 0 calc($offset - 3px),
+      #000 0 $offset
+    );
+  }
+
+  .hex {
+    width: $long-diagonal;
+    margin: $margin-vertical $margin-horizontal;
+    height: $short-diagonal;
+    display: inline-block;
+    font-size: initial;
+    clip-path: polygon(28% 0, 72% 0, 100% 50%, 72% 100%, 28% 100%, 0% 50%);
+    margin-bottom: calc($margin-vertical - 0.5 * $short-diagonal);
+    background-color: #000;
+    cursor: pointer;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.3);
+    }
+  }
+}

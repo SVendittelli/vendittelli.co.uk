@@ -1,24 +1,16 @@
-import { fireEvent, render, screen } from '@testing-library/react';
-
+import { render } from '@testing-library/react';
+import { BrowserRouter } from 'react-router-dom';
 import App from './app';
 
 describe('App', () => {
   it('should render successfully', () => {
-    const { baseElement } = render(<App />);
+    const { baseElement } = render(<App />, { wrapper: BrowserRouter });
 
     expect(baseElement).toBeDefined();
   });
 
   it('should show the splash screen', () => {
-    const { baseElement } = render(<App />);
-
-    expect(baseElement).toMatchSnapshot();
-  });
-
-  it('should show the home page after dismissing the splash screen', async () => {
-    const { baseElement } = render(<App />);
-
-    fireEvent.click(screen.getByRole('button'));
+    const { baseElement } = render(<App />, { wrapper: BrowserRouter });
 
     expect(baseElement).toMatchSnapshot();
   });
