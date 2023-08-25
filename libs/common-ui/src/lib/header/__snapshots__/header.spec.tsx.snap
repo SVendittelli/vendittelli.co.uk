@@ -17,6 +17,11 @@ exports[`Header should render successfully 1`] = `
       >
         About Me
       </a>
+      <a
+        href="/contact"
+      >
+        Contact
+      </a>
     </header>
   </div>
 </body>

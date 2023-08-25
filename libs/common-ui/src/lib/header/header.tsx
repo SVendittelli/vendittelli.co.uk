@@ -12,6 +12,7 @@ export function Header(props: HeaderProps) {
         {props.text}
       </Link>
       <Link to={'about-me'}>About Me</Link>
+      <Link to={'contact'}>Contact</Link>
     </header>
   );
 }

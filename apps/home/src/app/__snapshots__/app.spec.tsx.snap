@@ -1063,6 +1063,11 @@ exports[`App should show the splash screen 1`] = `
         >
           About Me
         </a>
+        <a
+          href="/contact"
+        >
+          Contact
+        </a>
       </header>
       <main>
         <div
