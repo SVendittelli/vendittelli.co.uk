@@ -71,9 +71,11 @@ $offset: $short-diagonal + (4 * $margin-vertical) - 2px;
     margin-bottom: calc($margin-vertical - 0.5 * $short-diagonal);
     background-color: #000;
     cursor: pointer;
+  }
+}
 
-    &:hover {
-      background-color: rgba(255, 255, 255, 0.3);
-    }
+@media (hover: hover) {
+  .hex:hover {
+    background-color: rgba(255, 255, 255, 0.3);
   }
 }
