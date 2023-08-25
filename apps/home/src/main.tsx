@@ -2,13 +2,13 @@ import emailjs from '@emailjs/browser';
 import { StrictMode } from 'react';
 import * as ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-
+import { environment } from './environments/environment';
 import routes from './routes';
 
 const router = createBrowserRouter(routes);
 
-if (process.env['NX_EMAILJS_PUBLIC_KEY']) {
-  emailjs.init(process.env['NX_EMAILJS_PUBLIC_KEY']);
+if (environment.emailjsPublicKey) {
+  emailjs.init(environment.emailjsPublicKey);
 }
 
 const root = ReactDOM.createRoot(
