@@ -1,7 +1,9 @@
-import { Header, Profile } from '@vendittelli/common-ui';
+import { Header } from '@vendittelli/common-ui';
 import classNames from 'classnames';
 import { Outlet, useMatch } from 'react-router-dom';
+
 import HexBackground from './hex-background/hex-background';
+import Profile from './profile/profile';
 
 import styles from './app.module.scss';
 

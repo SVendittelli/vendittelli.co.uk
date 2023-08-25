@@ -3,4 +3,5 @@
 
 export const environment = {
   production: false,
+  imageBaseURL: 'https://images.vendittelli.co.uk',
 };

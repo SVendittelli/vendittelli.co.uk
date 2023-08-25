@@ -1071,12 +1071,22 @@ exports[`App should show the splash screen 1`] = `
           <div
             class="container"
           >
-            <img
-              alt="Head shot"
-              class="profile-picture"
-              draggable="false"
-              src="/assets/profile-photo.jpg"
-            />
+            <picture>
+              <source
+                srcset="https://images.vendittelli.co.uk/profile-photos/profile-photo-250x250.webp"
+                type="image/webp"
+              />
+              <source
+                srcset="https://images.vendittelli.co.uk/profile-photos/profile-photo-250x250.jpg"
+                type="image/jpeg"
+              />
+              <img
+                alt="Head shot"
+                class="profile-picture"
+                draggable="false"
+                src="https://images.vendittelli.co.uk/profile-photos/profile-photo-250x250.jpg"
+              />
+            </picture>
             <h1
               class="title"
             >

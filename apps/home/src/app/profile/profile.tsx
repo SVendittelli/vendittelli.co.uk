@@ -1,4 +1,7 @@
 import { FaEnvelope, FaGithub, FaLinkedin } from 'react-icons/fa';
+
+import { environment } from '../../environments/environment';
+
 import styles from './profile.module.scss';
 
 /* eslint-disable-next-line */
@@ -28,12 +31,23 @@ export function Profile(props: ProfileProps) {
 
   return (
     <div className={styles['container']}>
-      <img
-        className={styles['profile-picture']}
-        src="/assets/profile-photo.jpg"
-        alt="Head shot"
-        draggable={false}
-      ></img>
+      <picture>
+        <source
+          srcSet={`${environment.imageBaseURL}/profile-photos/profile-photo-250x250.webp`}
+          type="image/webp"
+        />
+        <source
+          srcSet={`${environment.imageBaseURL}/profile-photos/profile-photo-250x250.jpg`}
+          type="image/jpeg"
+        />
+        <img
+          className={styles['profile-picture']}
+          src={`${environment.imageBaseURL}/profile-photos/profile-photo-250x250.jpg`}
+          alt="Head shot"
+          draggable={false}
+        />
+      </picture>
+
       <h1 className={styles['title']}>Sam Vendittelli</h1>
       <h2 className={styles['subtitle']}>Developer | Scrum Master</h2>
       <div className={styles['socials']}>

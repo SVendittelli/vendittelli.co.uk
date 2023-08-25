@@ -24,7 +24,6 @@ export function HexBackground(props: HexBackgroundProps) {
   useEffect(() => {
     const debounced = debounce(
       function updateHexCount() {
-        console.log('resize');
         setHexCount(calculateHexCount(window.innerHeight, window.innerWidth));
       },
       1000,
