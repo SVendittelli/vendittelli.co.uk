@@ -82,13 +82,30 @@ resource "aws_s3_bucket" "images" {
   }
 }
 
-resource "aws_s3_bucket_acl" "images" {
+resource "aws_s3_bucket_ownership_controls" "images" {
+  bucket = aws_s3_bucket.images.id
+  rule {
+    object_ownership = "BucketOwnerPreferred"
+  }
+}
+
+resource "aws_s3_bucket_public_access_block" "images" {
   bucket = aws_s3_bucket.images.id
 
-  acl = "public-read"
+  block_public_acls       = false
+  block_public_policy     = false
+  ignore_public_acls      = false
+  restrict_public_buckets = false
+}
+
+resource "aws_s3_bucket_acl" "images" {
+  depends_on = [aws_s3_bucket_ownership_controls.images]
+  bucket = aws_s3_bucket.images.id
+  acl    = "public-read"
 }
 
 resource "aws_s3_bucket_policy" "images" {
+  depends_on = [aws_s3_bucket_public_access_block.images]
   bucket = aws_s3_bucket.images.id
 
   policy = jsonencode({
