@@ -41,6 +41,17 @@ resource "cloudflare_record" "docs" {
   proxied = true
 }
 
+# images subdomain pointing to the images S3 bucket
+resource "cloudflare_record" "images" {
+  zone_id = local.zone_id
+  name    = "images"
+  value   = aws_s3_bucket.images.bucket_regional_domain_name
+  type    = "CNAME"
+
+  ttl     = 1
+  proxied = true
+}
+
 # Disable email
 resource "cloudflare_record" "dmarc" {
   zone_id = local.zone_id
