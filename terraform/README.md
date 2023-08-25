@@ -41,6 +41,7 @@ The infrastructure for my personal website: [vendittelli.co.uk](https://venditte
 | [cloudflare_record.dmarc](https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record) | resource |
 | [cloudflare_record.docs](https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record) | resource |
 | [cloudflare_record.domainkey](https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record) | resource |
+| [cloudflare_record.images](https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record) | resource |
 | [cloudflare_record.site_cname](https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record) | resource |
 | [cloudflare_record.spf1](https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record) | resource |
 | [cloudflare_record.www](https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/record) | resource |
