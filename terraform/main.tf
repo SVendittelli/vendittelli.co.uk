@@ -10,7 +10,7 @@ terraform {
   required_providers {
     aws = {
       source  = "hashicorp/aws"
-      version = "5.14.0"
+      version = "5.15.0"
     }
     cloudflare = {
       source  = "cloudflare/cloudflare"
@@ -18,7 +18,7 @@ terraform {
     }
     linode = {
       source  = "linode/linode"
-      version = "2.7.0"
+      version = "2.7.1"
     }
   }
 }
