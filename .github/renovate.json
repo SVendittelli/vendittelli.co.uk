@@ -1,18 +1,4 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["github>SVendittelli/renovate-config"],
-  "packageRules": [
-    {
-      "description": "Only update github-pages gem",
-      "matchManagers": ["bundler"],
-      "matchPackagePatterns": ["*"],
-      "excludePackagePatterns": ["github-pages"],
-      "enabled": false
-    },
-    {
-      "description": "Group all terraform dependencies together",
-      "matchManagers": ["terraform"],
-      "groupName": "terraform"
-    }
-  ]
+  "enabled": false
 }
